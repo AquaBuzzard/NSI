@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Exercice 2</title>
+</head>
+<body>
+
+  <button onclick="Pythagore()">Exercice 2</button><br/>
+
+  <li><a href="Page_Principale.html" class="navbar_item">Page Principale</a></li>
+
+  <div id="result"></div>
+
+  <script>
+    function Pythagore() {
+        const AB = parseFloat(prompt("Quelle est la valeur de AB?"));
+        const AC = parseFloat(prompt("Quelle est la valeur de AC?"));
+        
+        if (isNaN(AB) || isNaN(AC)) {
+            alert("Veuillez entrer des nombres valides.");
+            return;
+        }
+        
+        const BC = Math.sqrt(AB ** 2 + AC ** 2).toFixed(2);
+        
+        document.getElementById("result").innerHTML = "La valeur approchée de BC est " + BC;
+    }
+  </script>
+
+</body>
+</html>

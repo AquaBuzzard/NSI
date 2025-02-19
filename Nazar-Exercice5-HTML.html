@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 5</title>
+</head>
+<body>
+  <button onclick="exercice()">Exercice 5</button><br/>
+
+  <li><a href="Page_Principale.html" class="navbar_item">Page Principale</a></li>
+
+    <script>
+      function exercice() {
+        function contientLettreE(chaine) {
+            return chaine.includes('e');
+        }
+
+        let F = prompt("Veuillez entrer une chaîne de caractères:");
+
+        if (contientLettreE(F)) {
+            alert("La chaîne contient la lettre 'e'.");
+        } else {
+            alert("La chaîne ne contient pas la lettre 'e'.");
+        }
+        }
+    </script>
+</body>
+</html>

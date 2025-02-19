@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr" class="has-background-white">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+>
+  <link rel="stylesheet" href="styles/style_PP.css">
+  
+  <title>Los Pollos Hermanos</title>
+  <style>
+    :root {
+  --bulma-info-h: 219deg;
+  --bulma-info-l: 55%;
+  --bulma-primary-h: 12deg;
+  --bulma-primary-l: 47%;
+  --bulma-link-h: 33deg;
+  --bulma-link-s: 90%;
+  --bulma-link-l: 59%;
+  --bulma-scheme-h: 59;
+  --bulma-scheme-s: 100%;
+  --bulma-success-l: 0%;
+  --bulma-border: #ff4343;
+}
+  </style>
+</head>
+<body class="has-background-dark">
+  <h1 id="title_pp" class="has-text-primary is-size-2 has-background-white"> Los Pollos Hermanos</h1>
+  <br/>
+  <div class="columns">
+    <div class="column is-one-quarter"></div>
+    <div class="column">
+      <div class="box" id="enregistrement_form" style="width: 100%;">
+        <h1 class="title is-size-3 has-text-link has-text-centered">Enregistrement</h1>
+        <div class="field">
+         <label class="label has-text-info">Nom</label>
+         <div class="control">
+           <input class="input" type="text" placeholder="Votre nom famille" style="border: 1px solid #43ebff;">
+         </div>
+       </div>
+       <div class="field">
+         <label class="label has-text-info">Prenom</label>
+         <div class="control">
+           <input class="input" type="text" placeholder="Votre prenom" style="border: 1px solid #43ebff;">
+         </div>
+         <div class="field">
+         <label class="label has-text-info">Nom d'utilisateur</label>
+         <div class="control">
+           <input class="input" type="text" placeholder="Cel que vous desirez" style="border: 1px solid #43ebff;">
+         </div>
+           <div class="field">
+         <label class="label has-text-info">Mot de passe</label>
+         <div class="control">
+           <input class="input" type="text" placeholder="Revelez-la a personne!" style="border: 1px solid #43ebff;">
+         </div>
+       </div>
+           <div class="field">
+             <label class="label has-text-info">Pays de residence</label>
+             <div class="select" >
+               <select>
+                 <option>États-unis</option>
+                 <option>Mexique</option>
+                 <option>France</option>
+                 <option>Russie</option>
+               </select>
+             </div>
+           </div>
+           <div class="buttons">
+         <button class="button is-info">Créer votre compte</button>
+       </div>
+      </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+    </div>
+    <div class="column is-one-quarter"></div>
+  </div>
+  
+<footer class="has-background-grey-darker hero" style="margin-top: 2rem; border-top: 2px solid">
+    <p style="padding:3rem"> Une filiale de Madrigal Electromotive</p>
+  </footer>
+</body>
+</html>

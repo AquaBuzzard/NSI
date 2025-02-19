@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Titre de la page</title>
+</head>
+<body>
+  <h1>Un Quizz en HTML et JavaScript</h1>
+  <p id="result_p"></p><br/>
+  <h2>Premiere Question</h2>
+  <div>
+    <p> Le nombre 540 (en base 10) s'ecrit 21C en base 16: </p>
+    <button id="true_button">Vraie</button>
+    <button id="false_button">faux</button>
+    <br/>
+  </div>
+  <div>
+    <h2>Deuxieme Question</h2>
+    <p>Dans la representation des reels en base binaire le <strong>bit de poids fort</strong> est souvent utilise pour:</p>
+    <select id="list1" onchange="selection()">
+      <option>choissisez</option>
+      <option value="1">L'exposant biaise</option>
+      <option value="2">Le signe du nombre</option>
+      <option value="3">le complement A2</option>
+    </select>
+  </div>
+  <div>
+    <h2>
+      Troisième question
+    </h2>
+    <p>Quel est le module de python qui permet de dessiner avec une <strong>tortue</strong></p>
+    <input type="text" id="field1" value="">
+    <button id="3_button"> Valider la response 3</button>
+    <br/>
+  </div>
+  <br/>
+
+  <div>
+    <h1> Breaking Bad</h1>
+    <h2>Première question</h2>
+    <p> Quel est le pseudonyme de Walter White?</p>
+    <select id="list2">
+      <option>choissisez</option>
+      <option value="pll">Pollo</option>
+      <option value="nac">Nacho</option>
+      <option value="berg">Heisenberg</option>
+    </select>
+    <h2>Deuxième question</h2>
+    <p>comment s'appelle la chanson qui sonne a la fin de la serie<br/> piste: la chanson apartient a la bande badfinger.</p>
+    <input type="text" id="field2" value="">
+    <button id="5_button">valider la response 5</button>
+  </div>
+  <br/>  
+  <button id="f_button">valider le QCM</button>
+  <script src="scripts/EX6.js"></script>
+</body>
+</html>

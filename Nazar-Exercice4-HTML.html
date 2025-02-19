@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 4</title>
+
+</head>
+<body>
+    <p>Entrez un entier entre 0 et 100</p>
+
+    <div id="jeu">
+        <input type="number" id="guessInput" placeholder="Entrez votre nombre" />
+        <button onclick="deviner()">Deviner</button>
+    </div>
+
+    <div id="rendu"></div>
+    <div id="tentatives"></div>
+
+    <script>
+        let X = Math.floor(Math.random() * 101);
+        let Y = 0;
+
+        function deviner() {
+            let F = document.getElementById('guessInput').value;
+            if (F === "") {
+                alert("Veuillez entrer un nombre !");
+                return;
+            }
+
+            F = parseInt(F);
+            Y++;
+
+            if (isNaN(F)) {
+                alert("Ce n'est pas un nombre valide. Essaie encore.");
+                return;
+            }
+
+            if (F < X) {
+                document.getElementById("rendu").innerText = "C'est plus grand!";
+                document.getElementById("tentatives").innerText = `Essais: ${Y}`;
+            } else if (F > X) {
+                document.getElementById("rendu").innerText = "C'est plus petit!";
+                document.getElementById("tentatives").innerText = `Essais: ${Y}`;
+            } else {
+                document.getElementById("rendu").innerText = `Bravo ! Tu as trouvé le nombre ${X} en ${Y} essais.`;
+                document.getElementById("tentatives").innerText = "";
+                document.getElementById('guessInput').disabled = true;
+            }
+
+            document.getElementById('guessInput').value = "";
+        }
+    </script>
+
+    <li><a href="Page_Principale.html" class="navbar_item">Page Principale</a></li>
+</body>
+</html>
