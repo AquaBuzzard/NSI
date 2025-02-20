@@ -34,46 +34,66 @@
     <div class="column is-one-quarter"></div>
     <div class="column">
       <div class="box" id="enregistrement_form" style="width: 100%;">
+        <form>
         <h1 class="title is-size-3 has-text-link has-text-centered">Enregistrement</h1>
         <div class="field">
          <label class="label has-text-info">Nom</label>
          <div class="control">
-           <input class="input" type="text" placeholder="Votre nom famille" style="border: 1px solid #43ebff;">
+           <input class="input" type="text" placeholder="Votre nom famille" name="acc_l_name" style="border: 1px solid #43ebff;">
          </div>
        </div>
        <div class="field">
          <label class="label has-text-info">Prenom</label>
          <div class="control">
-           <input class="input" type="text" placeholder="Votre prenom" style="border: 1px solid #43ebff;">
+           <input class="input" type="text" placeholder="Votre prenom" name="acc_name" style="border: 1px solid #43ebff;">
          </div>
          <div class="field">
          <label class="label has-text-info">Nom d'utilisateur</label>
          <div class="control">
-           <input class="input" type="text" placeholder="Cel que vous desirez" style="border: 1px solid #43ebff;">
+           <input class="input" type="text" placeholder="Cel que vous desirez" name="acc_username" style="border: 1px solid #43ebff;">
          </div>
            <div class="field">
          <label class="label has-text-info">Mot de passe</label>
          <div class="control">
-           <input class="input" type="text" placeholder="Revelez-la a personne!" style="border: 1px solid #43ebff;">
+           <input class="input" type="text" placeholder="Revelez-la a personne!" name="acc_passw" style="border: 1px solid #43ebff;">
          </div>
        </div>
            <div class="field">
              <label class="label has-text-info">Pays de residence</label>
-             <div class="select" >
-               <select>
-                 <option>États-unis</option>
-                 <option>Mexique</option>
-                 <option>France</option>
-                 <option>Russie</option>
-               </select>
+             <div class="control">
+              <div class="select" >
+                <select>
+                  <option>États-unis</option>
+                  <option>Mexique</option>
+                  <option>France</option>
+                  <option>Russie</option>
+                </select>
+              </div>
              </div>
            </div>
-           <div class="buttons">
-         <button class="button is-info">Créer votre compte</button>
-       </div>
+           <div class="field">
+            <label class="label has-text-info">Type de compte</label>
+            <div class="control">
+              <div class="select">
+                <select>
+                  <option>Client</option>
+                  <option>Professionel</option>
+                </select>
+              </div>
+            </div>
+           </div>
+           <div class="field is-grouped is-grouped-centered">
+            <div class="control">
+              <input class="button is-info" type="submit" name="subm_b" id="subm_b"> 
+            </div>
+            <div class="control">
+              <a class="button is-info" href="enregistrement_final.html">Continuer</a>
+            </div>
+           </div>
       </div>
     </div>
-    <button class="modal-close is-large" aria-label="close"></button>
+  
+  </form>
   </div>
     </div>
     <div class="column is-one-quarter"></div>
@@ -82,5 +102,6 @@
 <footer class="has-background-grey-darker hero" style="margin-top: 2rem; border-top: 2px solid">
     <p style="padding:3rem"> Une filiale de Madrigal Electromotive</p>
   </footer>
+  <script src="scripts/enregistrement.js"></script>
 </body>
 </html>
