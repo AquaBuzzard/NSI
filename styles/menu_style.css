@@ -1,0 +1,32 @@
+#title_pp{
+    text-align: center;
+    color: rbg(200, 0, 0);
+    border-bottom: 2px red solid; 
+}
+body{
+    color: #F0C000;
+    padding: 0px;
+}
+
+#accordion{
+    cursor: pointer;
+    padding: 18px;
+    height: 30vh;
+    width: 100%;
+    margin: 5px;
+    transition: 0.4s;
+    border: none;
+    outline: none;
+}
+
+
+#panel{
+    display: none;
+    overflow: hidden;
+    transition: max-height 2s ease-out;
+}
+
+.litl_b{
+    height: 10vh;
+}
+
