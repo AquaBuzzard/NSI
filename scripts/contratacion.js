@@ -27,5 +27,5 @@ function openTab(evenement, tabName) {
   }
 
   document.getElementById(tabName).style.display = "block";
-  evenement.currentTarget.className += " active";
+  evenement.currentTarget.className += "is-active";
 }

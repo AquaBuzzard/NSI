@@ -8,9 +8,9 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
 >
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="styles/style_PP.css">
-  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/style_PP.css">
+
   <title>Los Pollos Hermanos</title>
   <style>
     :root {
@@ -88,7 +88,6 @@
     <div class="navbar-end">
       <div class="navbar-item">
         <div class="buttons">
-          <button class="button is-info" id="connection_button">Connectez-vous!</button>
           <a class="button is-primary" href="contratacion.html">
             <strong>Rejoins l'&Eacute;quipe!</strong>
           </a>
@@ -97,71 +96,14 @@
     </div>
   </div>
 </nav>
-<h1 class="title has-text-centered has-text-link is-size-3 mt-2">Commander</h1>
-<p class="is-size-4 has-text-centered has-text-white">Choissisez le type de votre commande</p>
-<div class="columns">
-    <div class="column">
-      <a href="commande_pickup_local_ch.html">
-        <div class="box has-background-danger m-6  has-text-centered has-text-success" id="pickup_b">
-          <span class="icon-text">
-              <span class="is-size-3">Pickup</span>
-              <span class="icon is-medium is-size-4">
-                  <i class="fas fa-store"></i>
-              </span>
-          </span>
-      </div>
-      </a>
-        
-    </div>
-    <div class="column">
-      <a href="commande_delivery_1.html">
-        <div class="box has-background-info m-6  has-text-centered has-text-success" id="delivery_b">
-          <span class="icon-text">
-              <span class="is-size-3">Delivery</span>
-              <span class="icon is-medium is-size-4">
-                  <i class="fas fa-home"></i>
-              </span>
-          </span>
-      </div>
-      </a>
-        
-    </div>
-</div>
-
-<div class="modal" id="connection_modal">
-  <div class="modal-background"></div>
-  <div class="modal-content">
-   <div class="box has-background-white" id="connection_form">
-     <h1 class="title is-size-3 has-text-link has-text-centered">Connection</h1>
-     <div class="field">
-       <label class="label has-text-info">Nom d'utilisateur</label>
-       <div class="control">
-         <input class="input" type="text" placeholder="Votre nom d'utilisateur" style="border: 1px solid #43ebff;">
-       </div>
-     </div>
-     <div class="field">
-       <label class="label has-text-info">Mot de passe </label>
-       <div class="control">
-         <input class="input" type="text" placeholder="Votre mot hyper-secrete" style="border: 1px solid #43ebff;">
-       </div>
-     </div>
-     <div class="buttons">
-       <button class="button is-info" id="b_cont">Continuer</button>
-     </div>
-     <div>
-       <p class="has-text-success">Vous ne possedez pas une compte? alors: </p>
-       <div class="buttons">
-       <a href="enregistrement_type_account.html"><button class="button is-info">Créez une compte</button></a>
-     </div>
-     </div>
-   </div>     
-  </div>
-  <button class="modal-close is-large" aria-label="close" id="modal_close_button1"></button>
-</div>
+<h1 class="title is-size-2 has-text-link has-text-centered mt-6 mb-6">Merci Beaucoup!!!</h1>
+<p class="is-size-4 has-text-white has-text-white has-text-centered">On vous appelera de que votre ordre soit prête pour ramasser ou quelle soit arrivée chez vous <br/>
+Vous pouvez maintenant retourner a l'accueil, on vous desire une bonne journée</p>
+<h1 class="title is-size-2 has-text-link has-text-centered mt-6 mb-6">À la prochaine!!!</h1>
 <footer class="has-background-grey-darker hero" style="margin-top: 2rem; border-top: 2px solid">
     <p style="padding:3rem"> Une filiale de Madrigal Electromotive</p>
   </footer>
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-<script src="scripts/PP.js"></script>
+<script src="scripts/commande_payment.js"></script>
 </body>
-</html>
+</html

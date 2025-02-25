@@ -8,7 +8,6 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
 >
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles/style_PP.css">
   
   <title>Los Pollos Hermanos</title>
@@ -28,7 +27,7 @@
 }
   </style>
 </head>
-<body class="has-background-dark">
+<body class="has-background-dark" id="ppbody">
   <h1 id="title_pp" class="has-text-primary is-size-2 has-background-white"> Los Pollos Hermanos</h1>
   <nav class="navbar has-background-dark" role="navigation" aria-label="main navigation">
   
@@ -38,7 +37,7 @@
         Nous
       </a>
 
-      <a class="navbar-item pr-4 pl-4 " href="menu.html">
+      <a class="navbar-item pr-4 pl-4 has-text-" href="menu.html">
         Menu
       </a>
       
@@ -92,76 +91,72 @@
           <a class="button is-primary" href="contratacion.html">
             <strong>Rejoins l'&Eacute;quipe!</strong>
           </a>
+          <a class="button is-light has-text-info" id="account_button">Mon compte</a>
         </div>
       </div>
     </div>
   </div>
 </nav>
-<h1 class="title has-text-centered has-text-link is-size-3 mt-2">Commander</h1>
-<p class="is-size-4 has-text-centered has-text-white">Choissisez le type de votre commande</p>
-<div class="columns">
-    <div class="column">
-      <a href="commande_pickup_local_ch.html">
-        <div class="box has-background-danger m-6  has-text-centered has-text-success" id="pickup_b">
-          <span class="icon-text">
-              <span class="is-size-3">Pickup</span>
-              <span class="icon is-medium is-size-4">
-                  <i class="fas fa-store"></i>
-              </span>
-          </span>
-      </div>
-      </a>
-        
-    </div>
-    <div class="column">
-      <a href="commande_delivery_1.html">
-        <div class="box has-background-info m-6  has-text-centered has-text-success" id="delivery_b">
-          <span class="icon-text">
-              <span class="is-size-3">Delivery</span>
-              <span class="icon is-medium is-size-4">
-                  <i class="fas fa-home"></i>
-              </span>
-          </span>
-      </div>
-      </a>
-        
-    </div>
-</div>
+<h1 class="title is-link has-text-centered mt-4">Payement</h1>
 
-<div class="modal" id="connection_modal">
-  <div class="modal-background"></div>
-  <div class="modal-content">
-   <div class="box has-background-white" id="connection_form">
-     <h1 class="title is-size-3 has-text-link has-text-centered">Connection</h1>
-     <div class="field">
-       <label class="label has-text-info">Nom d'utilisateur</label>
-       <div class="control">
-         <input class="input" type="text" placeholder="Votre nom d'utilisateur" style="border: 1px solid #43ebff;">
-       </div>
-     </div>
-     <div class="field">
-       <label class="label has-text-info">Mot de passe </label>
-       <div class="control">
-         <input class="input" type="text" placeholder="Votre mot hyper-secrete" style="border: 1px solid #43ebff;">
-       </div>
-     </div>
-     <div class="buttons">
-       <button class="button is-info" id="b_cont">Continuer</button>
-     </div>
-     <div>
-       <p class="has-text-success">Vous ne possedez pas une compte? alors: </p>
-       <div class="buttons">
-       <a href="enregistrement_type_account.html"><button class="button is-info">Créez une compte</button></a>
-     </div>
-     </div>
-   </div>     
-  </div>
-  <button class="modal-close is-large" aria-label="close" id="modal_close_button1"></button>
+<h1 class="title has-text-centered has-text-link is-size-3 mt-4">Votre Commande</h1>
+<div class="container p-4">
+    <div class="box has-background-white has-text-success" style="border: solid rgb(255, 199, 16) 2px;">
+        <div class="columns">
+            <div class="column has-text-centered" id="product_column">
+                <h1 class="title has-text-link has-text-centered is-size-4">Produit</h1>
+            </div>
+            <div class="column has-text-centered" id="quantity_column">
+                <h1 class="title has-text-link has-text-centered is-size-4">Quantité</h1>
+            </div>
+            <div class="column has-text-centered" id="price_column">
+              <h1 class="title has-text-link has-text-centered is-size-4">Prix</h1>
+          </div>
+        </div>
+        <p id="total_paragraph"> Le total a payer est de:</p>
+    </div>
 </div>
-<footer class="has-background-grey-darker hero" style="margin-top: 2rem; border-top: 2px solid">
+<div class="field is-grouped is-grouped-centered">
+  <div class="control">
+    <a class="button is-link">Payer apres recevoir</a>
+  </div>
+  <div class="control">
+    <button class="button is-link" id="pay_b">payer en ligne</button>
+  </div>
+</div>
+<div class="modal" id="connection_modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+     <div class="box has-background-white" id="connection_form">
+       <h1 class="title is-size-3 has-text-link has-text-centered">Connection</h1>
+       <div class="field">
+         <label class="label has-text-info">Nom d'utilisateur</label>
+         <div class="control">
+           <input class="input" type="text" placeholder="Votre nom d'utilisateur" style="border: 1px solid #43ebff;">
+         </div>
+       </div>
+       <div class="field">
+         <label class="label has-text-info">Mot de passe </label>
+         <div class="control">
+           <input class="input" type="text" placeholder="Votre mot hyper-secrete" style="border: 1px solid #43ebff;">
+         </div>
+       </div>
+       <div class="buttons">
+         <button class="button is-info" id="b_cont">Continuer</button>
+       </div>
+       <div>
+         <p class="has-text-success">Vous ne possedez pas une compte? alors: </p>
+         <div class="buttons">
+         <a href="enregistrement_type_account.html"><button class="button is-info">Créez une compte</button></a>
+       </div>
+       </div>
+     </div>     
+    </div>
+    <button class="modal-close is-large" aria-label="close" id="modal_close_button1"></button>
+  </div>
+  <footer class="has-background-grey-darker hero" style="margin-top: 2rem; border-top: 2px solid">
     <p style="padding:3rem"> Une filiale de Madrigal Electromotive</p>
   </footer>
-  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-<script src="scripts/PP.js"></script>
+  <script src="scripts/cart.js"></script>
 </body>
 </html>

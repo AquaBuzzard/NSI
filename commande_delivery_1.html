@@ -8,9 +8,9 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
 >
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="styles/style_PP.css">
-  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/style_PP.css">
+
   <title>Los Pollos Hermanos</title>
   <style>
     :root {
@@ -97,37 +97,39 @@
     </div>
   </div>
 </nav>
-<h1 class="title has-text-centered has-text-link is-size-3 mt-2">Commander</h1>
-<p class="is-size-4 has-text-centered has-text-white">Choissisez le type de votre commande</p>
+<br/>
+<h1 class="title is-size-3 has-text-centered has-text-link">Delivery</h1>
+<p class="has-text-centered has-text-white is-size-4">Inserez votre adresse</p>
 <div class="columns">
-    <div class="column">
-      <a href="commande_pickup_local_ch.html">
-        <div class="box has-background-danger m-6  has-text-centered has-text-success" id="pickup_b">
-          <span class="icon-text">
-              <span class="is-size-3">Pickup</span>
-              <span class="icon is-medium is-size-4">
-                  <i class="fas fa-store"></i>
-              </span>
-          </span>
-      </div>
-      </a>
-        
+    <div class="column is-half p-6">
+        <div class="embed-map-fixed">
+            <div class="embed-map-container" style="border: #ffc527 2px solid;">
+                <iframe class="embed-map-frame" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&height=400&hl=en&q=Paris&t=&z=14&ie=UTF8&iwloc=B&output=embed">
+                </iframe>
+                
+            </div><style>.embed-map-fixed{position:relative;text-align:right;width:600px;height:400px;}.embed-map-container{overflow:hidden;background:none!important;width:600px;height:400px;}.embed-map-frame{width:600px!important;height:400px!important;}</style>
+          </div>
+  
     </div>
-    <div class="column">
-      <a href="commande_delivery_1.html">
-        <div class="box has-background-info m-6  has-text-centered has-text-success" id="delivery_b">
-          <span class="icon-text">
-              <span class="is-size-3">Delivery</span>
-              <span class="icon is-medium is-size-4">
-                  <i class="fas fa-home"></i>
-              </span>
-          </span>
-      </div>
-      </a>
-        
+    <div class="column is-half p-6">
+        <br/>
+        <br/>
+        <h1 class="title is-size-4 has-text-centered has-text-link mt-6">
+            Votre addresse
+        </h1>
+        <div class="field has-addons">
+            <div class="control is-expanded">
+                <input class="input" type="text" placeholder="rue 12 Quartier 34">
+            </div>
+            <div class="control">
+                <input type="submit" class="button is-link">
+            </div>
+        </div>
+        <div class="field is-grouped is-grouped-centered">
+          <div class="control"><a href="commande.html" class="button is-link">Continuer</a></div>
+        </div>
     </div>
 </div>
-
 <div class="modal" id="connection_modal">
   <div class="modal-background"></div>
   <div class="modal-content">

@@ -302,9 +302,39 @@
     </div>
     <button class="modal-close is-large" aria-label="close" id="modal_close_button1"></button>
   </div>
+  <div class="modal" id="connection_modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+     <div class="box has-background-white" id="connection_form">
+       <h1 class="title is-size-3 has-text-link has-text-centered">Connection</h1>
+       <div class="field">
+         <label class="label has-text-info">Nom d'utilisateur</label>
+         <div class="control">
+           <input class="input" type="text" placeholder="Votre nom d'utilisateur" style="border: 1px solid #43ebff;">
+         </div>
+       </div>
+       <div class="field">
+         <label class="label has-text-info">Mot de passe </label>
+         <div class="control">
+           <input class="input" type="text" placeholder="Votre mot hyper-secrete" style="border: 1px solid #43ebff;">
+         </div>
+       </div>
+       <div class="buttons">
+         <button class="button is-info" id="b_cont">Continuer</button>
+       </div>
+       <div>
+         <p class="has-text-success">Vous ne possedez pas une compte? alors: </p>
+         <div class="buttons">
+         <a href="enregistrement_type_account.html"><button class="button is-info">Créez une compte</button></a>
+       </div>
+       </div>
+     </div>     
+    </div>
+    <button class="modal-close is-large" aria-label="close" id="modal_close_button1"></button>
+  </div>
   <footer class="has-background-grey-darker" style="margin-top: 2rem; border-top: 2px solid">
     <p style="padding:3rem"> Une filiale de Madrigal Electromotive</p>
   </footer>
-  <script src="scripts/PP.js"></script>
+  <script src="scripts/menu.js"></script>
 </body>
 </html>

@@ -28,26 +28,6 @@ cont_b.onclick = function() {
   c_modal.classList.toggle("is-active")
 }
 
-var acc = document.getElementsByClassName("button has-background-white has-text-success mb-0 ml-0");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    }
-  });
-}
-
 let checkbox = document.getElementById("t_checkbox");
 let button = document.getElementById("cont_b");
 let active = false;
@@ -63,8 +43,7 @@ checkbox.onclick = function(){
         active = false
         button.style.display = "none"
     }
-}
-
+  }
 button.onclick = function(){
     location.href = 'enregistrement.html'
 }
