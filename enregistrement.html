@@ -34,34 +34,34 @@
     <div class="column is-one-quarter"></div>
     <div class="column">
       <div class="box" id="enregistrement_form" style="width: 100%;">
-        <form>
+        <div id="register_form">
         <h1 class="title is-size-3 has-text-link has-text-centered">Enregistrement</h1>
         <div class="field">
          <label class="label has-text-link">Prenom</label>
          <div class="control">
-           <input class="input register_input" type="text" placeholder="Votre nom famille" name="acc_l_name" style="border: 1px solid #ffc832;">
+           <input class="input register_input" id="input_firstname" type="text" placeholder="Votre nom famille" name="acc_l_name" style="border: 1px solid #ffc832;">
          </div>
        </div>
        <div class="field">
          <label class="label has-text-link">Nom</label>
          <div class="control">
-           <input class="input register_input" type="text" placeholder="Votre prenom" name="acc_name" style="border: 1px solid #ffc832;">
+           <input class="input register_input" id="input_lastname" type="text" placeholder="Votre prenom" name="acc_name" style="border: 1px solid #ffc832;">
          </div>
          <div class="field">
          <label class="label has-text-link">Email</label>
          <div class="control">
-           <input class="input register_input" type="email" placeholder="Votre mail" name="acc_username" style="border: 1px solid #ffc832;">
+           <input class="input register_input" id="input_email" type="email" placeholder="Votre mail" name="acc_username" style="border: 1px solid #ffc832;">
          </div>
          </div>
          <div class="field">
          <label class="label has-text-link">Nom d'utilisateur</label>
          <div class="control">
-           <input class="input register_input" type="text" placeholder="Cel que vous desirez" name="acc_username" style="border: 1px solid #ffc832;">
+           <input class="input register_input" id="input_username" type="text" placeholder="Cel que vous desirez" name="acc_username" style="border: 1px solid #ffc832;">
          </div>
            <div class="field">
          <label class="label has-text-link">Mot de passe</label>
          <div class="control">
-           <input class="input register_input" type="text" placeholder="Revelez-la a personne!" name="acc_passw" style="border: 1px solid #ffc832;">
+           <input class="input register_input" id="input_password" type="text" placeholder="Revelez-la a personne!" name="acc_passw" style="border: 1px solid #ffc832;">
          </div>
        </div>
            <div class="field">
@@ -80,9 +80,9 @@
             <label class="label has-text-link">Type de compte</label>
             <div class="control">
               <div class="select">
-                <select>
-                  <option>Client</option>
-                  <option>Professionel</option>
+                <select id="options_account_type">
+                  <option value="client">Client</option>
+                  <option value="professional">Professionel</option>
                 </select>
               </div>
             </div>
@@ -98,7 +98,7 @@
       </div>
     </div>
   
-  </form>
+  </div>
   </div>
     </div>
     <div class="column is-one-quarter"></div>

@@ -1,38 +1,37 @@
 let submit_button = document.getElementById("subm_b");
-let user_info = {name: "", lastname: "", email: "", username: "", points: 0, candidate_account: ""};
+let form = document.getElementById("register_form");
 let input_fields = document.getElementsByClassName("input register_input");
-let values = []
+let is_logged = false
 
-function registerSubmit(){
- for (let i=0; i<input_fields.length; i++){
-    let field = input_fields[i];
-    values.push(field.value)
- }
- let x = 0
- for(y in user_info){
-    user_info[y] = values[x]
- }
- console.log(user_info);
- return user_info
+function getFormData(){
+  let data = {};
+  data["name"] = document.getElementById("input_firstname").value;
+  data["lastname"] = document.getElementById("input_lastname").value;
+  data["email"] = document.getElementById("input_email").value;
+  data["username"] = document.getElementById("input_username").value;
+  data["password"] = document.getElementById("input_password").value;
+  data["candidate_account"] = document.getElementById("options_account_type").value == "client";
+  return data;
 }
 
 async function createNewUSer() {
     try {
-      const url = "http://localhost:5000/orders";
-      console.log(JSON.stringify(user_info))
+      const user_info = getFormData();
+      const url = "http://localhost:5000/users";
       const response = await fetch(url,
          {method: "POST", headers: { "Content-Type": "application/json"},
           body: JSON.stringify(user_info)});
       if (!response.ok) {
-        throw new Error(`Response status: ${response.status}`);
+        console.log("oops");
       }
-      data = await response.json()
-      sessionStorage.setItem("user_id", data.user_id)
-      window.open("cart.html");
+      data = await response.json();
+      localStorage.setItem("user_id", data.id);
     } catch (error) {
       console.error(error.message);
     }
-  
+
+    
+    return true;
   }
 
-  submit_button.onclick = registerSubmit;
+  submit_button.onclick = createNewUSer;

@@ -8,6 +8,7 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
 >
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles/menu_style.css">
   
   <title>Los Pollos Hermanos</title>
@@ -23,7 +24,7 @@
   --bulma-scheme-h: 59;
   --bulma-scheme-s: 100%;
   --bulma-success-l: 0%;
-  --bulma-border: #ff4343;
+  --bulma-border: #ffbd43;
 }
   </style>
 </head>
@@ -87,6 +88,15 @@
         <div class="navbar-item">
           <div class="buttons">
             <button class="button is-info" id="connection_button">Connectez-vous!</button>
+            <button class="button is-outlined is-link is-static" id="user_static_button">
+              <span class="icon-text">
+                <span class="icon">
+                  <i class="fas fa-user"></i>
+                </span>
+                <span class="has-text-link" id="user_button_username">username</span>
+              </span>
+            </button>
+            <button class="button is-outlined is-static has-text-link" id="points_static_button">Points: 0</button>
             <a class="button is-primary" href="contratacion.html">
               <strong>Rejoins l'&Eacute;quipe!</strong>
             </a>
@@ -275,52 +285,22 @@
   <div class="modal" id="connection_modal">
     <div class="modal-background"></div>
     <div class="modal-content">
-      <div class="box has-background-white" id="connection_form">
-        <h1 class="title is-size-3 has-text-link has-text-centered">Connection</h1>
-        <div class="field">
-          <label class="label has-text-info">Nom d'utilisateur</label>
-            <div class="control">
-              <input class="input" type="text" placeholder="Votre nom d'utilisateur" style="border: 1px solid #43ebff;">
-            </div>
-        </div>
-        <div class="field">
-          <label class="label has-text-info">Mot de passe </label>
-          <div class="control">
-            <input class="input" type="text" placeholder="Votre mot hyper-secrete" style="border: 1px solid #43ebff;">
-          </div>
-        </div>
-        <div class="buttons">
-          <button class="button is-info" id="b_con">Continuer</button>
-        </div>
-        <div>
-          <p class="has-text-success">Vous ne possedez pas une compte? alors: </p>
-            <div class="buttons">
-              <a href="enregistrement_type_account.html"><button class="button is-info">Créez une compte</button></a>
-            </div>
-        </div>
-      </div>     
-    </div>
-    <button class="modal-close is-large" aria-label="close" id="modal_close_button1"></button>
-  </div>
-  <div class="modal" id="connection_modal">
-    <div class="modal-background"></div>
-    <div class="modal-content">
      <div class="box has-background-white" id="connection_form">
        <h1 class="title is-size-3 has-text-link has-text-centered">Connection</h1>
        <div class="field">
          <label class="label has-text-info">Nom d'utilisateur</label>
          <div class="control">
-           <input class="input" type="text" placeholder="Votre nom d'utilisateur" style="border: 1px solid #43ebff;">
+           <input class="input" id="username_input" type="text" placeholder="Votre nom d'utilisateur" style="border: 1px solid #43ebff;">
          </div>
        </div>
        <div class="field">
          <label class="label has-text-info">Mot de passe </label>
          <div class="control">
-           <input class="input" type="text" placeholder="Votre mot hyper-secrete" style="border: 1px solid #43ebff;">
+           <input class="input" id="password_input" type="text" placeholder="Votre mot hyper-secrete" style="border: 1px solid #43ebff;">
          </div>
        </div>
        <div class="buttons">
-         <button class="button is-info" id="b_cont">Continuer</button>
+         <button class="button is-info" id="login_button">Continuer</button>
        </div>
        <div>
          <p class="has-text-success">Vous ne possedez pas une compte? alors: </p>
@@ -335,6 +315,7 @@
   <footer class="has-background-grey-darker" style="margin-top: 2rem; border-top: 2px solid">
     <p style="padding:3rem"> Une filiale de Madrigal Electromotive</p>
   </footer>
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   <script src="scripts/menu.js"></script>
 </body>
 </html>

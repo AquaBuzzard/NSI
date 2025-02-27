@@ -89,17 +89,19 @@
       <div class="navbar-item">
         <div class="buttons">
           <button class="button is-info" id="connection_button">Connectez-vous!</button>
+          <button class="button is-outlined is-link is-static" id="user_static_button">
+            <span class="icon-text">
+              <span class="icon">
+                <i class="fas fa-user"></i>
+              </span>
+              <span class="has-text-link" id="user_button_username">username</span>
+            </span>
+          </button>
+          <button class="button is-outlined is-static has-text-link" id="points_static_button">Points: 0</button>
           <a class="button is-primary" href="contratacion.html">
             <strong>Rejoins l'&Eacute;quipe!</strong>
           </a>
-          <a class="button is-light has-text-link" id="account_button">
-            <span class="icon-text">
-                <span class="icon">
-                    <i class="fas fa-home"></i>
-                </span>
-                <span>Mon Compte</span>
-            </span>
-          </a>
+        
         </div>
       </div>
     </div>
@@ -307,17 +309,17 @@
      <div class="field">
        <label class="label has-text-info">Nom d'utilisateur</label>
        <div class="control">
-         <input class="input" type="text" placeholder="Votre nom d'utilisateur" style="border: 1px solid #43ebff;">
+         <input class="input" id="username_input" type="text" placeholder="Votre nom d'utilisateur" style="border: 1px solid #43ebff;">
        </div>
      </div>
      <div class="field">
        <label class="label has-text-info">Mot de passe </label>
        <div class="control">
-         <input class="input" type="text" placeholder="Votre mot hyper-secrete" style="border: 1px solid #43ebff;">
+         <input class="input" id="password_input" type="text" placeholder="Votre mot hyper-secrete" style="border: 1px solid #43ebff;">
        </div>
      </div>
      <div class="buttons">
-       <button class="button is-info" id="b_cont">Continuer</button>
+       <button class="button is-info" id="login_button">Continuer</button>
      </div>
      <div>
        <p class="has-text-success">Vous ne possedez pas une compte? alors: </p>
@@ -333,6 +335,6 @@
     <p style="padding:3rem"> Une filiale de Madrigal Electromotive</p>
 </footer>
 <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-<script src="scripts/menu.js"></script>
+<script src="scripts/commande_local_choix.js"></script>
 </body>
 </html>

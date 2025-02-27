@@ -56,7 +56,7 @@ def populate():
 
 with app.app_context():
     db.create_all()
-    #populate()
+    populate()
 
 @app.route('/users', methods=['GET'])
 def get_users():
@@ -72,6 +72,27 @@ def get_users():
         "password":user.password
     } for user in users])
 
+@app.route('/users/<user_id>', methods=['GET'])
+def get_user_basic_info(user_id):
+    user = User.query.get(user_id)
+    return jsonify({
+        "id": user.id,
+        "username": user.username,
+        "points": user.points
+    })
+
+
+@app.route("/users/<name>/<password>", methods=['GET'])
+def get_user_by_name_and_password(name, password): 
+    user = User.query.filter(User.username == name, User.password == password).first()
+    if user is None:
+        return jsonify(None)
+    return jsonify({
+        "id": user.id,
+        "username": user.username,
+        "points": user.points
+    })
+
 @app.route('/product', methods=['GET'])
 def get_products():
     products = Product.query.all()
@@ -81,6 +102,7 @@ def get_products():
         "price": product.price,
         "point_price": product.point_price,
     } for product in products])
+
 
 @app.route('/orders', methods=['GET'])
 def get_orders():
@@ -96,14 +118,14 @@ def get_orders():
 @app.route('/orders/<order_id>', methods=['GET'])
 def get_order(order_id):
     query = (
-        select(Order.id, Order.user_id, Order.payment_complete, ProductQuantity.quantity, Product.name, Product.price)
+        select(Order.id, Order.user_id, Order.payment_complete, ProductQuantity.quantity, Product.name, Product.price, Product.point_price)
         .select_from(Order)
         .join(ProductQuantity, Order.id == ProductQuantity.order_id)
         .join(Product, ProductQuantity.product_id == Product.id)
         .filter(Order.id == order_id)
     )
     data = db.session.execute(query)
-    names = ["order_id", "user_id", "payment_complete", "quantity", "product_name", "price"]
+    names = ["order_id", "user_id", "payment_complete", "quantity", "product_name", "price", "point_price"]
 
     result = []
     for row in data:
@@ -116,7 +138,15 @@ def add_user():
     new_user = User(**data)
     db.session.add(new_user)
     db.session.commit()
-    return jsonify({"message": "Utilisateur ajouté"}), 201
+    return jsonify({"message": "Utilisateur ajouté", "id": new_user.id}), 201
+
+@app.route('/users/<user_id>/<points>', methods=['POST'])
+def increse_user_points(user_id, points):
+    user = User.query.get(user_id)
+    user.points += int(points)
+    db.session.add(user)
+    db.session.commit()
+    return jsonify({"message": "Points mis a jour", "Points": user.points})
 
 @app.route('/products', methods=['POST'])
 def add_product():

@@ -30,3 +30,9 @@ body{
     height: 10vh;
 }
 
+#user_static_button{
+    display: none;
+  }
+  #points_static_button{
+    display: none;
+  }

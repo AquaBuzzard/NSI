@@ -8,6 +8,7 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
 >
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles/style_PP.css">
   
   <title>Los Pollos Hermanos</title>
@@ -23,7 +24,7 @@
   --bulma-scheme-h: 59;
   --bulma-scheme-s: 100%;
   --bulma-success-l: 0%;
-  --bulma-border: #ff4343;
+  --bulma-border: #ffdb3b;
 }
   </style>
 </head>
@@ -88,6 +89,15 @@
       <div class="navbar-item">
         <div class="buttons">
           <button class="button is-info" id="connection_button">Connectez-vous!</button>
+          <button class="button is-outlined is-link is-static" id="user_static_button">
+            <span class="icon-text">
+              <span class="icon">
+                <i class="fas fa-user"></i>
+              </span>
+              <span class="has-text-link" id="user_button_username">username</span>
+            </span>
+          </button>
+          <button class="button is-outlined is-static has-text-link" id="points_static_button">Points: 0</button>
           <a class="button is-primary" href="contratacion.html">
             <strong>Rejoins l'&Eacute;quipe!</strong>
           </a>
@@ -116,6 +126,21 @@ Vous ne go&ucirc;terez plus jamais le poulet de la m&ecirc;me mani&egrave;re !<b
       <h3 class="is-size-4 title has-text-link">Gustavo Fring, n&ocirc;tre fondateur.</h3>
       <img src="images/Owner.PNG" class="mt-5" style="border: 2px solid black; border-radius: 5px;">
       </div>
+      <div class="box has-background-white">
+        <h1 class="title is-size-5 has-text-link has-text-centered">Donnations pour les createurs du site</h1>
+        <p class="has-text-success">Si vous avez aimez le site, soutenez les createurs du site pour leurs aider avec son travaille, 
+          toute donnation sera utilisée pour l'amelioration du site, et l'alimentation des createurs...
+        </p>
+        <h1 class="subtitle has-text-link is-size-5 has-text-centered">Addresse Bitcoin</h1>
+        <div class="field is-grouped is-grouped-centered">
+          <figure class="image is-128x128">
+            <img src="images/bitcoinkey.jpg" style="border: solid 1px #ffdb43;">
+          </figure>
+          
+        </div>
+        <p class="has-text-centered has-text-success">1325fCujusk7hTgUy9yyCywJ2z9S6FsQqQ</p>
+       
+      </div>
     </div>
   </div>
 </div>
@@ -127,17 +152,17 @@ Vous ne go&ucirc;terez plus jamais le poulet de la m&ecirc;me mani&egrave;re !<b
        <div class="field">
          <label class="label has-text-info">Nom d'utilisateur</label>
          <div class="control">
-           <input class="input" type="text" placeholder="Votre nom d'utilisateur" style="border: 1px solid #43ebff;">
+           <input class="input" id="username_input" type="text" placeholder="Votre nom d'utilisateur" style="border: 1px solid #43ebff;">
          </div>
        </div>
        <div class="field">
          <label class="label has-text-info">Mot de passe </label>
          <div class="control">
-           <input class="input" type="text" placeholder="Votre mot hyper-secrete" style="border: 1px solid #43ebff;">
+           <input class="input" id="password_input" type="text" placeholder="Votre mot hyper-secrete" style="border: 1px solid #43ebff;">
          </div>
        </div>
        <div class="buttons">
-         <button class="button is-info" id="b_cont">Continuer</button>
+         <button class="button is-info" id="login_button">Continuer</button>
        </div>
        <div>
          <p class="has-text-success">Vous ne possedez pas une compte? alors: </p>
@@ -152,6 +177,7 @@ Vous ne go&ucirc;terez plus jamais le poulet de la m&ecirc;me mani&egrave;re !<b
   <footer class="has-background-grey-darker hero" style="margin-top: 2rem; border-top: 2px solid">
     <p style="padding:3rem"> Une filiale de Madrigal Electromotive</p>
   </footer>
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   <script src="scripts/PP.js"></script>
 </body>
 </html>

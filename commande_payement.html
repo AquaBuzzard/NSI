@@ -24,7 +24,7 @@
   --bulma-scheme-h: 59;
   --bulma-scheme-s: 100%;
   --bulma-success-l: 0%;
-  --bulma-border: #ff4343;
+  --bulma-border: #ffbd43;
 }
   </style>
 </head>
@@ -89,6 +89,15 @@
       <div class="navbar-item">
         <div class="buttons">
           <button class="button is-info" id="connection_button">Connectez-vous!</button>
+          <button class="button is-outlined is-link is-static" id="user_static_button">
+            <span class="icon-text">
+              <span class="icon">
+                <i class="fas fa-user"></i>
+              </span>
+              <span class="has-text-link" id="user_button_username">username</span>
+            </span>
+          </button>
+          <button class="button is-outlined is-static has-text-link" id="points_static_button">Points: 0</button>
           <a class="button is-primary" href="contratacion.html">
             <strong>Rejoins l'&Eacute;quipe!</strong>
           </a>
@@ -135,7 +144,7 @@
         <div class="field is-grouped is-grouped-centered">
           <div class="control">
             <label class="label has-text-link">Date d'expiration</label>
-            <input class="input" type="date" placeholder="20/01/2008">
+            <input class="input" type="month" placeholder="20/01/2008">
           </div>
           <div class="control">
             <label class="label has-text-link">Numero de securité</label>
@@ -151,9 +160,9 @@
         </div>
         <div class="field is-grouped is-grouped-centered">
           <div class="control">
-            <a href="commande_remerciement.html" class="button is-link">
+            <button class="button is-link" id="payment_button">
               Payer
-            </a>
+            </button>
           </div>
         </div>
       </div>
@@ -168,7 +177,7 @@
       <div class="box has-background-dark" id="panel">
         <div class="field is-grouped is-grouped-centered">
           <div class="control">
-            <button class="button is-link">Utiliser mes Chickenpoints!!!</button>
+            <button class="button is-link" id="points_payment_button">Utiliser mes Chickenpoints!!!</button>
           </div>
         </div>
       </div>
@@ -187,17 +196,17 @@
        <div class="field">
          <label class="label has-text-info">Nom d'utilisateur</label>
          <div class="control">
-           <input class="input" type="text" placeholder="Votre nom d'utilisateur" style="border: 1px solid #43ebff;">
+           <input class="input" id="username_input" type="text" placeholder="Votre nom d'utilisateur" style="border: 1px solid #43ebff;">
          </div>
        </div>
        <div class="field">
          <label class="label has-text-info">Mot de passe </label>
          <div class="control">
-           <input class="input" type="text" placeholder="Votre mot hyper-secrete" style="border: 1px solid #43ebff;">
+           <input class="input" id="password_input" type="text" placeholder="Votre mot hyper-secrete" style="border: 1px solid #43ebff;">
          </div>
        </div>
        <div class="buttons">
-         <button class="button is-info" id="b_cont">Continuer</button>
+         <button class="button is-info" id="login_button">Continuer</button>
        </div>
        <div>
          <p class="has-text-success">Vous ne possedez pas une compte? alors: </p>

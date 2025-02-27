@@ -8,6 +8,7 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
 >
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles/style_PP.css">
   
   <title>Los Pollos Hermanos</title>
@@ -23,7 +24,7 @@
   --bulma-scheme-h: 59;
   --bulma-scheme-s: 100%;
   --bulma-success-l: 0%;
-  --bulma-border: #ff4343;
+  --bulma-border: #ffbd43;
 }
   </style>
 </head>
@@ -88,16 +89,24 @@
       <div class="navbar-item">
         <div class="buttons">
           <button class="button is-info" id="connection_button">Connectez-vous!</button>
+          <button class="button is-outlined is-link is-static" id="user_static_button">
+            <span class="icon-text">
+              <span class="icon">
+                <i class="fas fa-user"></i>
+              </span>
+              <span class="has-text-link" id="user_button_username">username</span>
+            </span>
+          </button>
+          <button class="button is-outlined is-static has-text-link" id="points_static_button">Points: 0</button>
           <a class="button is-primary" href="contratacion.html">
             <strong>Rejoins l'&Eacute;quipe!</strong>
           </a>
-          <a class="button is-light has-text-info" id="account_button">Mon compte</a>
+          
         </div>
       </div>
     </div>
   </div>
 </nav>
-<h1 class="title is-link has-text-centered mt-4">Payement</h1>
 
 <h1 class="title has-text-centered has-text-link is-size-3 mt-4">Votre Commande</h1>
 <div class="container p-4">
@@ -112,13 +121,17 @@
             <div class="column has-text-centered" id="price_column">
               <h1 class="title has-text-link has-text-centered is-size-4">Prix</h1>
           </div>
+          <div class="column has-text-centered" id="points_column">
+            <h1 class="title has-text-link has-text-centered is-size-4">Prix(points)</h1>
+        </div>
         </div>
         <p id="total_paragraph"> Le total a payer est de:</p>
+        <p id="total_paragraph_points">Ou</p>
     </div>
 </div>
 <div class="field is-grouped is-grouped-centered">
   <div class="control">
-    <a class="button is-link">Payer apres recevoir</a>
+    <a href="commande_remerciement.html" class="button is-link">Payer après recevoir</a>
   </div>
   <div class="control">
     <button class="button is-link" id="pay_b">payer en ligne</button>
@@ -157,6 +170,7 @@
   <footer class="has-background-grey-darker hero" style="margin-top: 2rem; border-top: 2px solid">
     <p style="padding:3rem"> Une filiale de Madrigal Electromotive</p>
   </footer>
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   <script src="scripts/cart.js"></script>
 </body>
 </html>
