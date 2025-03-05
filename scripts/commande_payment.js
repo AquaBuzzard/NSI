@@ -152,11 +152,12 @@ points_payment_button.onclick = function(){
   if(user_id !== undefined){
     user = getUser(user_id);
     user.then((user_data) =>{
-      if(user.points > Number(points_a_payer)){
+      if(user_data.points > Number(points_a_payer)){
         updatePoints(user_id, points_a_payer)
         window.open("commande_remerciement.html");
       }else{
-        alert("vous n'avez pas sufissament des points!!!!");
+        alert("vous n'avez pas sufissament des points!!!!")
+        console.log(user.points);
       }
       
     })
