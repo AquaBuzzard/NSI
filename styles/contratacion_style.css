@@ -40,3 +40,10 @@ body{
 #legal_tab{
   display: none;
 }
+
+#user_static_button{
+  display: none;
+}
+#points_static_button{
+  display: none;
+}

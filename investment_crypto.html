@@ -1,187 +1,614 @@
 <!DOCTYPE html>
+
+
 <html lang="fr" class="has-background-white">
+
+
 <head>
+
+
   <meta charset="UTF-8">
+
+
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
   <link
+
+
   rel="stylesheet"
+
+
   href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+
+
 >
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="styles/style_PP.css">
-  
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" href="styles/style_PP.css">
+
+ 
+
   <title>Los Pollos Hermanos</title>
+
+
   <style>
+
+
     :root {
+
+
   --bulma-info-h: 219deg;
+
+
   --bulma-info-l: 55%;
+
+
   --bulma-primary-h: 12deg;
+
+
   --bulma-primary-l: 47%;
+
+
   --bulma-link-h: 33deg;
+
+
   --bulma-link-s: 90%;
+
+
   --bulma-link-l: 59%;
+
+
   --bulma-scheme-h: 59;
+
+
   --bulma-scheme-s: 100%;
+
+
   --bulma-success-l: 0%;
-  --bulma-border: #ffdb3b;
+
+
+  --bulma-border: #ffbd43;
+
+
 }
+
+
   </style>
+
+
 </head>
-<body class="has-background-dark" id="ppbody">
+
+
+<body class="has-background-dark">
+
+
   <h1 id="title_pp" class="has-text-primary is-size-2 has-background-white"> Los Pollos Hermanos</h1>
+
+
   <nav class="navbar has-background-dark" role="navigation" aria-label="main navigation">
-  
+
+
+ 
+
+
   <div id="navbar" class="navbar-menu box pt-3 pb-3 is-active m-1">
+
+
     <div class="navbar-start">
-      <a class="navbar-item is-selected pr-4 pl-4" href="Page_Principale.html">
+
+
+      <a class="navbar-item pr-4 pl-4" href="Page_Principale.html">
+
+
         Nous
+
+
       </a>
 
-      <a class="navbar-item pr-4 pl-4 has-text-" href="menu.html">
+ 
+
+      <a class="navbar-item pr-4 pl-4 " href="menu.html">
+
+
         Menu
+
+
       </a>
 
-      <a class="navbar-item pr-4 pl-4 " href="investment_space.html">
-        Investir
-      </a>
-      
+
+     
+
+
       <div class="navbar-item has-dropdown is-hoverable">
+
+
         <a class="navbar-link">
+
+
           Exercices
+
+
         </a>
 
+ 
+
         <div class="navbar-dropdown">
+
+
           <a href="" class="navbar-item">
+
+
             Exercice 1
+
+
           </a>
+
+
           <a href="Tanguy-Exercice2-HTML.html" class="navbar-item">
+
+
             Exercice 2
+
+
           </a>
+
+
           <a href="Tanguy-Exercice3-HTML.html" class="navbar-item">
+
+
             Exercice 3
+
+
           </a>
+
+
           <a href="Nazar-Exercice4-HTML.html" class="navbar-item">
+
+
             Exercice 4
+
+
           </a>
+
+
           <a href="Nazar-Exercice5-HTML.html" class="navbar-item">
+
+
             Exercice 5
+
+
           </a>
+
+
           <a href="Angel-Exercice6-HTML.html" class="navbar-item">
+
+
             Exercice 6
+
+
           </a>
+
+
         </div>
+
+
       </div>
+
+ 
 
       <div class="navbar-item has-dropdown is-hoverable">
+
+
         <a class="navbar-link">
+
+
           Activités
+
+
         </a>
 
+ 
+
         <div class="navbar-dropdown">
+
+
           <a href="ac1.html" class="navbar-item">
+
+
             Activité 1
+
+
           </a>
+
+
           <a class="navbar-item">
+
+
             Activité 2
+
+
           </a>
+
+
         </div>
+
+
       </div>
+
+
     </div>
+
+ 
 
     <div class="navbar-end">
+
+
       <div class="navbar-item">
+
+
         <div class="buttons">
+
+
           <button class="button is-info" id="connection_button">Connectez-vous!</button>
+
+
           <button class="button is-outlined is-link is-static" id="user_static_button">
+
+
             <span class="icon-text">
+
+
               <span class="icon">
+
+
                 <i class="fas fa-user"></i>
+
+
               </span>
+
+
               <span class="has-text-link" id="user_button_username">username</span>
+
+
             </span>
+
+
           </button>
+
+
           <button class="button is-outlined is-static has-text-link" id="points_static_button">Points: 0</button>
+
+
           <a class="button is-primary" href="contratacion.html">
+
+
             <strong>Rejoins l'&Eacute;quipe!</strong>
+
+
           </a>
+
+
         </div>
+
+
       </div>
+
+
     </div>
+
+
   </div>
+
+
 </nav>
-<div class="container mt-5">
-  <div class="columns">
-    <div class="column is-two-thirds">
-      <h1 class="is-size-2">Qui sommes nous?</h1>
-      <p class="has-text-white">Bienvenue chez <em>Los Pollos Hermanos</em>, le restaurant o&ugrave; la qualit&eacute; rencontre la tradition.<br>
-Fond&eacute; par le charismatique Gustavo Fring, <em>Los Pollos Hermanos</em> vous offre une exp&eacute;rience<br> culinaire in&eacute;gal&eacute;e,
-mettant en avant des poulets r&ocirc;tis &agrave; la perfection,<br>
-accompagn&eacute;s de recettes uniques qui raviront les papilles de tous les gourmets.<br>
-Avec une ambiance chaleureuse et un service irr&eacute;prochable,<br>
-chaque visite promet une escapade savoureuse au c&oelig;ur de notre passion pour la cuisine.<br>
-Que ce soit pour un d&eacute;jeuner rapide ou un d&icirc;ner entre amis,<br>
-<em>Los Pollos Hermanos</em> est l'endroit id&eacute;al pour savourer des plats d&eacute;licieux tout en profitant d’un cadre accueillant.<br>
-Vous ne go&ucirc;terez plus jamais le poulet de la m&ecirc;me mani&egrave;re !<br/></p>
-      <p class="has-text-white has-text-weight-bold"><em>Los Pollos Hermanos</em>, where something delicious is always cooking...</p>
-    </div>
-    <div class="column">
-      <div class="box has-background-white">
-      <h3 class="is-size-4 title has-text-link">Gustavo Fring, n&ocirc;tre fondateur.</h3>
-      <img src="images/Owner.PNG" class="mt-5" style="border: 2px solid black; border-radius: 5px;">
-      </div>
-      <div class="box has-background-white">
-        <h1 class="title is-size-5 has-text-link has-text-centered">Donnations pour les createurs du site</h1>
-        <p class="has-text-success">Si vous avez aimez le site, soutenez les createurs du site pour leurs aider avec son travaille, 
-          toute donnation sera utilisée pour l'amelioration du site, et l'alimentation des createurs...
-        </p>
-        <h1 class="subtitle has-text-link is-size-5 has-text-centered">Addresse Bitcoin</h1>
-        <div class="field is-grouped is-grouped-centered">
-          <figure class="image is-128x128">
-            <img src="images/bitcoinkey.jpg" style="border: solid 1px #ffdb43;">
-          </figure>
-          
+
+
+<h1 class="title has-text-link has-text-centered is-size-4 mt-4">Payement</h1>
+
+
+<div class="columns">
+
+
+  <div class="column is-one-quarter"></div>
+
+
+  <div class="column">
+
+
+    <div class="box has-background-white p-3 mb-6">
+
+
+      <button class="button pay_acc" style="width: 100%;">
+
+
+        <span class="icon-text">
+
+
+          <span>Payer avec Cryptomonnaie</span>
+
+
+          <span class="icon has-text-link">
+
+
+            <i class="fas fa-arrow-down"></i>
+
+
+          </span>
+
+
+        </span>
+
+
+      </button>
+
+
+      <div class="box has-background-dark" id="panel">
+
+
+        <div class="field ">
+
+
+          <div class="control">
+
+
+            <label class="label has-text-link">Type de cryptomonnaie</label>
+
+
+            <input class="input" type="text" placeholder="Bitcoin">
+
+
+          </div>
+
+
         </div>
-        <p class="has-text-centered has-text-success">1325fCujusk7hTgUy9yyCywJ2z9S6FsQqQ</p>
-       
+
+ 
+
+        <div class="field">
+
+
+          <div class="control">
+
+
+            <label class="label has-text-link">Addresse de facturation</label>
+
+
+            <input class="input" type="text" placeholder="Albuquerque, Nuevo México 87102, EE. UU.">
+
+
+          </div>
+
+
+        </div>
+
+ 
+
+        <div class="field">
+
+
+          <div class="control">
+
+
+            <label class="label has-text-link">Addresse du porte-feuille crypto</label>
+
+
+            <input class="input" type="text" placeholder="1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa">
+
+
+          </div>
+
+
+        </div>
+
+ 
+
+        <div class="field is-grouped is-grouped-centered">
+
+
+          <div class="control">
+
+
+            <label class="label has-text-link">Date de l'achat</label>
+
+
+            <input class="input" type="month" placeholder="06/03/2025">
+
+
+          </div>
+
+
+          <div class="control">
+
+
+            <label class="label has-text-link">Argent à investir</label>
+
+
+            <input class="input" type="number" maxlength="999" placeholder="1000€">
+
+
+          </div>
+
+
+        </div>
+
+ 
+
+        <div class="field">
+
+
+          <div class="control">
+
+
+            <label class="label has-text-link">Information sur la transaction</label>
+
+
+            <input class="input" type="tel" placeholder="Quel type d'entreprise réalise l'achat?">
+
+
+          </div>
+
+
+        </div>
+
+
+        <div class="field is-grouped is-grouped-centered">
+
+
+          <div class="control">
+
+
+            <a href="investment_thanking.html" class="button is-primary">
+
+
+              Payer
+
+
+            </a>
+
+
+          </div>
+
+
+        </div>
+
+
       </div>
+
+
     </div>
+
+
   </div>
+
+
+  <div class="column is-one-quarter"></div>
+
+
 </div>
-  <div class="modal" id="connection_modal">
+
+
+<p class="has-text-white is-size-5 mt-6 mb-6 has-text-centered">En utilisant cette page pour proceder au payement de votre commande vous acceptez notres
+
+
+  <a href="termes_et_conditions.html">termes et conditions</a>
+
+
+</p>
+
+
+<div class="modal" id="connection_modal">
+
+
     <div class="modal-background"></div>
+
+
     <div class="modal-content">
+
+
      <div class="box has-background-white" id="connection_form">
+
+
        <h1 class="title is-size-3 has-text-link has-text-centered">Connection</h1>
+
+
        <div class="field">
+
+
          <label class="label has-text-info">Nom d'utilisateur</label>
+
+
          <div class="control">
+
+
            <input class="input" id="username_input" type="text" placeholder="Votre nom d'utilisateur" style="border: 1px solid #43ebff;">
+
+
          </div>
+
+
        </div>
+
+
        <div class="field">
+
+
          <label class="label has-text-info">Mot de passe </label>
+
+
          <div class="control">
+
+
            <input class="input" id="password_input" type="text" placeholder="Votre mot hyper-secrete" style="border: 1px solid #43ebff;">
+
+
          </div>
+
+
        </div>
+
+
        <div class="buttons">
+
+
          <button class="button is-info" id="login_button">Continuer</button>
+
+
        </div>
+
+
        <div>
+
+
          <p class="has-text-success">Vous ne possedez pas une compte? alors: </p>
+
+
          <div class="buttons">
+
+
          <a href="enregistrement_type_account.html"><button class="button is-info">Créez une compte</button></a>
+
+
        </div>
+
+
        </div>
-     </div>     
+
+
+     </div>    
+
+
     </div>
+
+
     <button class="modal-close is-large" aria-label="close" id="modal_close_button1"></button>
+
+
   </div>
+
+
   <footer class="has-background-grey-darker hero" style="margin-top: 2rem; border-top: 2px solid">
-    <p style="padding:3rem"> Une filiale de Madrigal Electromotive</p>
-  </footer>
-  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-  <script src="scripts/PP.js"></script>
-</body>
-</html>
+
+
+      <p style="padding:3rem"> Une filiale de Madrigal Electromotive</p>
+
+
+    </footer>
+
+
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+
+  <script src="scripts/commande_payment.js"></script>
+
+
+  </body>
+
+
+  </html>
