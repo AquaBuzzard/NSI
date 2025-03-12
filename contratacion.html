@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="fr" class="has-background-white">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles/contratacion_style.css">
+  
+  <title>Los Pollos Hermanos</title>
+  <style>
+    :root {
+      --bulma-primary-h: 7deg;
+  --bulma-primary-l: 49%;
+  --bulma-link-h: 45deg;
+  --bulma-link-l: 49%;
+  --bulma-info-h: 191deg;
+  --bulma-info-l: 49%;
+  --bulma-success-s: 100%;
+  --bulma-success-l: 0%;
+  --bulma-warning-h: 37deg;
+  --bulma-warning-l: 49%;
+  --bulma-danger-h: 360deg;
+  --bulma-danger-l: 38%;
+  --bulma-scheme-h: 57;
+  --bulma-scheme-s: 100%;
+  --bulma-light-l: 100%;
+  --bulma-light-invert-l: 100%;
+  --bulma-border: red;
+  --bulma-dark-l: 7%;
+}
+  </style>
+</head>
+<body class="has-navbar-fixed-bottom has-background-dark">
+  <h1 id="title_pp" class="has-text-primary is-size-1 mayan"> Los Pollos Hermanos</h1>
+  <nav id="navbar" class="navbar is-fixed-bottom has-background-dark" role="navigation" aria-label="main navigation">
+  <div id="navbar" class="navbar-menu box pt-3 pb-3 m-1 is-active">
+    <div class="navbar-start">
+      <a class="navbar-item pr-4 pl-4" href="Page_Principale.html">
+        Nous
+      </a>
+
+      <a class="navbar-item pr-4 pl-4 has-text-" href="menu.html">
+        Menu
+      </a>
+
+     
+      <div class="navbar-item has-dropdown-up is-hoverable">
+        <a class="navbar-link">
+          Exercices
+        </a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item">
+            Exercice 1
+          </a>
+          <a href="Tanguy-Exercice2-HTML.html" class="navbar-item">
+            Exercice 2
+          </a>
+          <a href="Tanguy-Exercice3-HTML.html" class="navbar-item">
+            Exercice 3
+          </a>
+          <a href="Nazar-Exercice4-HTML.html" class="navbar-item">
+            Exercice 4
+          </a>
+          <a href="Nazar-Exercice5-HTML.html" class="navbar-item">
+            Exercice 5
+          </a>
+          <a href="Angel-Exercice6-HTML.html" class="navbar-item">
+            Exercice 6
+          </a>
+        </div>
+      </div>
+
+      <div class="navbar-item has-dropdown-up is-hoverable">
+        <a class="navbar-link">
+          Activités
+        </a>
+
+        <div class="navbar-dropdown">
+          <a href="ac1.html" class="navbar-item">
+            Activité 1
+          </a>
+          <a class="navbar-item">
+            Activité 2
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <button class="button is-info" id="connection_button">Connectez-vous!</button>
+          <button class="button is-outlined is-link is-static" id="user_static_button">
+            <span class="icon-text">
+              <span class="icon">
+                <i class="fas fa-user"></i>
+              </span>
+              <span class="has-text-link" id="user_button_username">username</span>
+            </span>
+          </button>
+          <button class="button is-outlined is-static has-text-link" id="points_static_button">Points: 0</button>
+          <a class="button is-primary is-selected" href="contratacion.html">
+            <strong>Rejoins l'&Eacute;quipe!</strong>
+          </a>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    
+</nav>
+
+<div class="tabs is-centered is-toggle  mt-1">
+  <ul>
+    <li><a class="has-text-primary-35 has-background-link has-text-weight-bold" onclick="openTab(event, 'generalites_tab')">Generalites</a></li>
+    <li><a class="has-text-primary-35 has-background-link has-text-weight-bold" onclick="openTab(event, 'presentation_tab')">Presentation</a></li>
+    <li><a class="has-text-primary-35 has-background-link has-text-weight-bold" onclick="openTab(event, 'competences_tab')">Competences</a></li>
+    <li><a class="has-text-primary-35 has-background-link has-text-weight-bold" onclick="openTab(event, 'benef_tab')">Benefices</a></li>
+    <li><a class="has-text-primary-35 has-background-link has-text-weight-bold" onclick="openTab(event, 'legal_tab')">Notions Legales</a></li>
+  </ul>
+</div>
+  
+  <script src="JS_PP.js"></script>
+<div id="generalites_tab" class="tabcontent">
+<div class="container mt-5">
+  <div class="columns">
+    <div class="column is-half">
+      <h1 class="is-size-3 mayan">Rejoignez l'équipe de <em>Los Pollos Hermanos</em></h1>
+<p class="has-text-white">Chez <em>Los Pollos Hermanos</em>, nous croyons que notre succès repose sur la passion<br>
+   et l'engagement de nos employés. Si vous aimez offrir un service exceptionnel,<br>
+   travailler dans un environnement dynamique, et surtout partager notre amour du<br>
+   poulet, nous serions ravis de vous rencontrer !</p>
+<br/>
+<p class="has-text-white">Nous recherchons des personnes motivées pour rejoindre nos équipes dans divers domaines :<br>
+service client, cuisine, gestion et bien plus encore. Peu importe votre expérience,<br>
+nous croyons en l'importance de la formation continue et du développement personnel.</p>
+    <br/>
+<h4 class="is-size-4 mayan">Pourquoi travailler chez <em>Los Pollos Hermanos</em> ?</h4>
+
+<ul  class="has-text-white">
+  <li><strong class="has-text-white">Un environnement de travail convivial et dynamique</strong> : Faites partie d'une équipe passionnée où la bonne humeur est essentielle.</li>
+  <li><strong class="has-text-white">Des opportunités de croissance</strong> : Nous valorisons l'évolution de nos employés et offrons des possibilités de promotion internes.</li>
+  <li><strong class="has-text-white">Des avantages compétitifs</strong> : Salaire attractif, horaires flexibles, et un accès à des avantages exclusifs.</li>
+</ul>
+ <br/>
+<h4 class="is-size-4 mayan">Postes disponibles :</h4>
+<ul  class="has-text-white is-size-5">
+  <li>• Cuisinier</li>
+  <li>• Serveur/Serveuse</li>
+  <li>• Responsable de site</li>
+  <li>• Équipe de gestion des stocks</li>
+</ul>
+ <br/>
+ <article class="message is-link">
+  <div class="message-header">
+    <h1 class="is-size-4">Alors...</h1>
+  </div>
+  <div class="message-body">
+    <p>Vous êtes prêt(e) à faire partie de l'aventure <em>Los Pollos Hermanos</em> ?<br>
+      Remplissez le formulaire dans cette page.</p>
+      
+      <p><em>Los Pollos Hermanos</em> est un employeur offrant l'égalité des chances.<br>
+      Nous encourageons les candidatures de toutes les personnes qualifiées, indépendamment de leur origine, genre, orientation sexuelle ou statut.<br>
+      Rejoignez une équipe où chacun a sa place !</p>
+  </div>
+ </article>
+    </div>
+    <div class="column">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/B9RgougnhiE?si=OoVrRDF7PEERnRyO" 
+      title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+      style="border: 2px solid red; border-radius: 5px; box-shadow: 0px 0px 5px white, 0px 0px 5px white inset;"></iframe>
+      <br/>
+      <form class="box mt-6 has-background-white" style="border: 3px solid rgb(255, 174, 0); box-shadow: 0px 0px 5px rgb(0, 140, 255), 0px 0px 5px rgb(0, 140, 255) inset;">
+        <div class="field">
+  <label class="label has-text-success">Nom</label>
+  <div class="control">
+    <input class="input is-dark" type="text" placeholder="Walter White" style="border: 2px solid rgb(255, 174, 0)">
+  </div>
+</div>
+
+<div class="field">
+  <label class="label has-text-success">Numero de telephone</label>
+  <div class="control has-icons-left has-icons-right">
+    <input class="input is-dark" type="tel" placeholder="0X XX XX XX XX"
+    pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}" 
+    style="border: 2px solid rgb(255, 174, 0)">
+  </div>
+
+</div>
+
+<div class="field">
+  <label class="label has-text-success">Email</label>
+  <div class="control has-icons-left has-icons-right">
+    <input class="input is-dark" type="email" placeholder="Lalo.Salamanca@brkbad.com" style="border: 2px solid rgb(255, 174, 0)">
+  </div>
+  
+</div>
+
+<div class="field">
+  <label class="label has-text-success">Poste</label>
+  <div class="control">
+    <div class="select is-dark">
+      <select>
+        <option>Selectionner un poste</option>
+        <option>Cuisinier</option>
+        <option>Serveur/Serveuse</option>
+        <option>Responsable de site</option>
+        <option>Equipe de gestion</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<div class="field ">
+  <div class="control">
+    <label class="label has-text-success">Inserez votre CV</label>
+    <div class="file is-boxed is-link">
+      <label class="file-label">
+        <input class="file-input" type="file" name="CV">
+        <span class="file-cta">
+          <span class="file-icon">
+            <i class="fas fa-file"></i>
+          </span>
+          <span class="file-label has-text-success">Votre CV</span>
+        </span>
+      </label>
+    </div>
+  </div>
+</div>
+
+<div class="field">
+  <div class="control">
+    <label class="checkbox">
+      <input type="checkbox">
+      J'ai lu et accepte les <a href="termes_et_conditions.html">termes et conditions</a>
+    </label>
+  </div>
+</div>
+
+<div class="field is-grouped">
+  <div class="control">
+    <button class="button is-link">Envoyer</button>
+  </div>
+</div>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+<div id="presentation_tab" class="tabcontent">
+  <div class="container mt-5">
+    <div class="columns">
+      <div class="column is-full">
+        
+        <h1 class="is-size-2 has-text-centered mayan">Les postes disponibles chez Los Pollos Hermanos</h1>
+        <p class="has-text-white mb-30 has-text-centered">Vous êtes donc interessé/e de former partie de notre famille?<br/>
+        Regardez ci-dessous les postes de travail disponibles et leurs descriptions, ce qui<br/>
+        vous aidera à décider quel rôle est le meilleure pour vous, vous pouvez ainsi consulter<br/>
+        la liste de benefices qui emporte la famille de nôtre Pollera.<br/>
+        Bienvenue chez nous! où quelque chose de delicieux et toujours en cuisson.
+        </p>
+        <br/>
+        <div class="columns mt-10" style="border: 2px solid red; border-radius: 15px; box-shadow: 0px 0px 5px white, 0px 0px 5px white inset;">
+        <div class="column is-half">
+        <h1 class="title is-size-3 has-text-centered has-text-danger">Front-end</h1>
+        <h1 class="subtitle is-size-5 has-text-centered has-text-white">Ceux en contact avec nos clients</h1>
+        <div class="card m-10 p-2 has-background-black">
+          <div class="card-image">
+            <form class=" image is-3by2">
+              <img src="images/cuisiniere.jpg">
+            </form>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4 has-text-link">Cuisinier/e</p>
+                  <p class="subtitle is-6 has-text-danger">L'amant de l'art de la cuisine</p>
+                </div>
+              </div>
+            </div>
+            <div class="content has-text-white">
+              <p>Le cuisinier/La cuisiniere est la pièce clé, comment manger si on ne cuisine pas d'abord?
+              On considere que pour remplir ce poste pleinement, il faut posséder un amour et une passion
+              véritable pour la cuisine. <a href="https://en.wikipedia.org/wiki/Gourmet">Gourmet</a> ou pas, ce
+              qui est le plus important chez nous est la rigueur et la dedication, nôtre objectif est de servir               un repas de la meilleure qualité possible, et la meilleure nourriture est celle faite avec de                      l'amour</p>
+              
+             
+            </div>
+          </div>  
+         </div>
+          <div class="card m-10 p-2 has-background-black">
+          <div class="card-image">
+            <form class=" image is-3by2">
+              <img src="images/serveur.jpg">
+            </form>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4 has-text-link">Serveur/se</p>
+                  <p class="subtitle is-6 has-text-danger">Le lien entre la cuisine et le consommateur</p>
+                </div>
+              </div>
+            </div>
+            <div class="content has-text-white">
+              <p>Le serveur/La serveuse c'est la personne qui apporte le message de bonheur créé par le
+              cuisinier. On demande que nos serveurs et serveuses aient une grande habilité pour
+              traiter avec les gens et donner la meilleure experience possible à nos clients, ainsi comme 
+              faire epreuve d'un équilibre suffisant pour supporter les heures où nous sommes le plus 
+              remplis.</p>
+            </div>
+          </div>  
+         </div>
+        </div>
+          <div class="column is-half">
+            <h1 class="title is-size-3 has-text-centered has-text-info">Back-end</h1>
+        <h1 class="subtitle is-size-5 has-text-centered has-text-white">Les piliers de notre operation</h1>
+          <div class="card m-10 p-2 has-background-warning">
+          <div class="card-image">
+            <form class=" image is-3by2">
+              <img src="images/manager.jpg">
+            </form>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">Responsable de site/manager</p>
+                  <p class="subtitle is-6 has-text-info">Le centre de contrôle</p>
+                </div>
+              </div>
+            </div>
+            <div class="content has-text-success">
+              <p>Le/la responsable de site ou manager est chargé/e de toutes les taches administratives du
+              local et de veiller que tout se passe dans un bon ordre. On espère d'un/e manager la tenance
+              d'une bonne relation avec ses employés et avec les clients si jamais on a besoin de 
+              communiquer avec lui. Un rapport par mois est attendu de chaque manager ainsi qu'un rapport
+              hebdomadaire pour les locaux les plus importants.</p>
+            </div>
+          </div>  
+         </div>
+            <div class="card m-10 p-2 has-background-warning">
+          <div class="card-image">
+            <form class=" image is-3by2">
+              <img src="images/equipedegestion.jpg">
+            </form>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">Equipe de gestion</p>
+                  <p class="subtitle is-6 has-text-info">Les plus silencieux mais les plus indispensables</p>
+                </div>
+              </div>
+            </div>
+            <div class="content has-text-success">
+              <p>Ceux qui se chargent d'administrer et maintenir les ressources de chaque local, ils sont 
+              donc essentiels et nôtre mission de créer de la nourriture excellente ne peut être realisée qu'avec
+              et grâce à eux. Vu que notre recette est secrète, on demande <strong>la plus grande
+              prudence et modestie</strong> de la part de notre équipe de gestion, le processus de selection 
+              pour ce poste est donc le plus rigoureux.</p>
+            </div>
+          </div>  
+         </div>
+        </div>
+
+       </div>     
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div id="competences_tab" class="tabcontent">
+  <h1 class="is-size-3 ml-6">Les Competences requises pour travailler chez-nous </h1>
+  <p class="ml-6 has-text-white">Malgré le fait que chez <em>Los Pollos Hermanos</em> on aimerait accueillir toute l'aide possible, on possède une mission claire: la qualité,  en plus on dispose d'une reputation qu'on doit<br/>
+maintenir, on doit survivre après tout. En tant qu'amants de la nourriture et de la productivité, ce qu'on valorise le plus est l'expérience, mais celle-ci doit être prouvée<br/>
+  en consequence une épreuve de capacité et d'efficacité sera menée pour tout candidat lors d'un entretien indépendament du poste demandé et de la formation<br/>
+  du candidat.</p>
+  <br/>
+  <article class="message is-link ml-6 mr-6">
+    <div class="message-header">
+      <h1 class="is-size-4">IMPORTANT!!</h1>
+    </div>
+    <div class="message-body">
+      <p>Le niveau de formation et la quantité ainsi que la qualité de l’expérience 
+        requise peuvent varier selon le poste pour lequel le candidat postule, le type de poste et 
+        l’emplacement du lieu de travail, mais la décision d’embauche ou de rejet d’un candidat dépend presque entièrement de l’épreuve.</p>
+    </div>
+  </article>
+  <br/>
+  <p class="ml-6 has-text-white"> Les prérequis pour la canditature selon le poste et type de local:</p>
+  <br/>
+  <br/>
+  <button class="button has-background-white has-text-link mb-0 ml-0" id="accordion">Cuisinier/e</button>
+  <div class="box mt-0" id="panel">
+    <p class="has-text-centered">Pour être cuisinier/e chez <em><strong>Los Pollos hermanos</strong></em> vous aurez besoin de:</p>
+    <ul class="has-text-centered">
+      <li>• Posseder un diplomat verifiant la complétion d'un cursus dans un école de cuisine</li>
+      <li>• Avoir au moins 3 ans d'experience et une référence fiable pour vous soutenir</li>
+      <li>• Passer l'épreuve d'habilité culinaire</li>
+    </ul>
+  </div>
+  <button class="button has-background-white has-text-link mb-0 ml-0" id="accordion">Serveur</button>
+  <div class="box mt-0" id="panel">
+     <p class="has-text-centered">Pour être serveur/se chez <em><strong>Los Pollos hermanos</strong></em> vous aurez besoin de:</p>
+    <ul class="has-text-centered">
+      <li>• Pas d'études au delà du baccalaureat requis</li>
+      <li>• Au moins un an d'expérience comme serveur </li>
+      <li>• Pas de référence requise</li>
+    </ul>
+  </div>
+  <button class="button has-background-white has-text-link mb-0 ml-0" id="accordion">Responsable de site</button>
+  <div class="box mt-0" id="panel">
+     <p class="has-text-centered">Pour être manager chez <em><strong>Los Pollos hermanos</strong></em> vous aurez besoin de:</p>
+    <ul class="has-text-centered">
+      <li>• Avoir realisé des études supérieures (Bac+5) en gestion d'entreprises ou des études économiques associées</li>
+      <li>• Posseder au moins 3 ans d'expérience dans le champ de travail de l'administration</li>
+      <li>• Passer l'épreuve d'organisation</li>
+      <li>• Etablir un contrat de confidentialité avec des conditions spéciales du poste de responsable de site</li>
+    </ul>
+  </div>
+  <button class="button has-background-white has-text-link mb-0 ml-0" id="accordion">Gestion</button>
+  <div class="box mt-0" id="panel">
+     <p class="has-text-centered">Pour faire partie de l'équipe de gestion de <em><strong>Los Pollos hermanos</strong></em> vous aurez besoin de:</p>
+    <ul class="has-text-centered">
+      <li>• Avoir realisé des études en gestion, au moins du niveau d'une licence</li>
+      <li>• Avoir au moins 2 ans d'expérience dans une équipe de gestion</li>
+      <li>• Passer l'épreuve de confidentialité</li>
+      <li>• Etablir un contrat de confidentialité avec des conditions spéciales du poste de responsable de site</li>
+    </ul>
+  </div>
+  <p class="ml-6 mt-5 has-text-white">On est sûr que vous vous demandez de quoi s'agit chaque épreuve, cette information vous sera attribuée lors de l'acceptation de votre dossier<br/>
+   (si celui-ci est accepté). N'oubliez pas de réviser les notions legales avant de faire votre candidature, on vous souhaite une bonne journée.</p>
+  
+</div>
+<div id="benef_tab" class="tabcontent">
+  <h1 class="is-size-2 has-text-centered">Benefices</h1>
+  <p class="has-text-centered has-text-white mt-4">
+    Travailler chez Los Pollos Hermanos offre de nombreux avantages aux employés, garantissant un<br/>
+    environnement de travail motivant et épanouissant. Voici un tableau avec les principaux bénéfices et les postes dont ils peuvent profiter :
+  </p>
+  <div class="box m-4 has-background-white" style="border: 2px solid rgb(255, 174, 0)">
+    <h1 class="is-size-4 has-text-centered has-text-link title">Table de Benefices</h1>
+  <table class="table is-bordered is-hoverable is-fullwidth has-background-white ">
+    <thead>
+      <tr>
+        <th class="has-text-success">Benefice</th>
+        <th class="has-text-success">Chef</th>
+        <th class="has-text-success">Serveur</th>
+        <th class="has-text-success">Responsable de site</th>
+        <th class="has-text-success">Équipe de gestion</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="has-text-success">Repas et réductions</td>
+        <td class="has-text-centered">
+          <span class="icon has-text-link">
+            <i class="fas fa-check"></i>
+          </span>
+        </td>
+        <td class="has-text-centered">
+          <span class="icon has-text-link">
+            <i class="fas fa-check"></i>
+          </span>
+        </td>
+        <td class="has-text-centered">
+          <span class="icon has-text-link">
+            <i class="fas fa-check"></i>
+          </span>
+        </td>
+        <td class="has-text-centered">
+          <span class="icon has-text-link">
+            <i class="fas fa-ban"></i>
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td class="has-text-success">Développement professionnel</td>
+        <td class="has-text-centered">
+          <span class="icon has-text-link">
+            <i class="fas fa-check"></i>
+          </span>
+        </td>
+        <td class="has-text-centered">
+          <span class="icon has-text-link">
+            <i class="fas fa-check"></i>
+          </span>
+        </td>
+        <td class="has-text-centered">
+          <span class="icon has-text-link">
+            <i class="fas fa-check"></i>
+          </span>
+        </td>
+        <td class="has-text-centered">
+          <span class="icon has-text-link">
+            <i class="fas fa-check"></i>
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td class="has-text-success">Santé et bien-être</td>
+        <td class="has-text-centered">
+          <span class="icon has-text-link">
+            <i class="fas fa-check"></i>
+          </span>
+        </td>
+        <td class="has-text-centered">
+          <span class="icon has-text-link">
+            <i class="fas fa-ban"></i>
+          </span>
+        </td>
+        <td class="has-text-centered">
+          <span class="icon has-text-link">
+            <i class="fas fa-check"></i>
+          </span>
+        </td>
+        <td class="has-text-centered">
+          <span class="icon has-text-link">
+            <i class="fas fa-check"></i>
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td class="has-text-success">Primes de performance et bonus</td>
+        <td class="has-text-centered">
+          <span class="icon has-text-link">
+            <i class="fas fa-ban"></i>
+          </span>
+        </td>
+        <td class="has-text-centered">
+          <span class="icon has-text-link">
+            <i class="fas fa-check"></i>
+          </span>
+        </td>
+        <td class="has-text-centered">
+          <span class="icon has-text-link">
+            <i class="fas fa-ban"></i>
+          </span>
+        </td>
+        <td class="has-text-centered">
+          <span class="icon has-text-link">
+            <i class="fas fa-check"></i>
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+    </div>
+  <p class="mt-4 ml-6 has-text-white">Vous trouverez plus d'informations sur chaque bénéfice ainsi que les bénéfices de chaque poste ci-dessous:</p>
+  <div class="box m-4 has-background-white" style="border: 2px solid rgb(255, 174, 0)">
+  <h1 class="is-size-4 has-text-centered title has-text-link">Informations</h1>
+  <div class="columns">
+    <div class="column is-half">
+      <h1 class="subtitle has-text-centered has-text-link is-size-4">Bénéfices généraux</h1>
+  <ol class="ml-6 is-size-5 has-text-success">
+    <li><p class="has-text-success is-size-5">Repas et Réductions</p>
+    <ul>
+      <li class="has-text-success">• Repas gratuits ou à tarif réduit lors des heures de service</li>
+      <li class="has-text-success">• Réductions sur les produits et services de l'entreprise</li>
+    </ul>
+    </li>
+    <br/>
+    <li>
+      <p class="has-text-success is-size-5">Développement Professionnel</p>
+      <ul>
+        <li class="has-text-success">• Accès à des formations professionnelles pour l'évolution de carrière</li>
+        <li class="has-text-success">• Possibilités d'avancement en interne</li>
+      </ul>
+    </li>
+    <br/>
+    <li>
+      <p class="has-text-success is-size-5">Santé et Bien-être</p>
+      <ul>
+        <li class="has-text-success">• Assurances santé et couverture sociale complémentaire</li>
+        <li class="has-text-success">• Horaires flexibles pour équilibrer vie professionnelle et personnelle</li>
+      </ul>
+    </li>
+    <br/>
+    <li>
+      <p class="has-text-success is-size-5">Récompenses et Reconnaissance</p>
+      <ul>
+        <li class="has-text-success">• Primes de performance et bonus en fonction des résultats</li>
+        <li class="has-text-success">• Programmes de reconnaissance des employés</li>
+      </ul>
+    </li>
+ </ol>
+      <br/>
+    </div>
+    <div class="column has-text-success">
+      <h1 class="subtitle has-text-link has-text-centered is-size-4">Benefices specifiques</h1>
+      <ol class="ml-6 is-size-5">
+        <li><p class="has-text-success is-size-5"><strong class="has-text-success">Chef Cuisinier</strong>: 
+          <br/>Prime de résponsabilité, formation continue en cuisine et management, accès à des événements gastronomiques.</p></li>
+        <br/>
+        <li><p class="has-text-success is-size-5"><strong class="has-text-success">Serveur</strong>: 
+          <br/>Possibilité de choisir des horaires flexibles, bonus pour service client exceptionnel.</p></li>
+        <br/>
+        <li><p class="has-text-success is-size-5"><strong class="has-text-success">Responsable de site</strong>: 
+          <br/>Véhicule de fonction ou indemnités de déplacement, primes de performance sur la gestion du restaurant, formations en gestion d'entreprise.</p></li>
+        <br/>
+        <li><p class="has-text-success is-size-5"><strong class="has-text-success">Équipe de Gestion</strong>: 
+          <br/>Participation aux bénéfices de l’entreprise, opportunités de formation avancée en leadership et gestion, télétravail partiel selon les besoins.</p></li>
+      </ol>
+    </div>
+  </div>
+</div>
+</div>
+<div id="legal_tab" class="tabcontent">
+  <h1 class="title has-text-centered is-size-3 has-text-info">Notions Legales</h1>
+  <br/>
+  <h1 class="subtitle is-size-4 has-text-info ml-6">Introduction</h1>
+  <p class="has-text-white ml-6">Cette page est dediée aux notions legales que vous devez connaitre avant de faire une candidature d'embauchement chez <em>Los Pollos Hermanos</em> afin que ce processus<br/>
+  et votre temps dans notre entreprise se passent sans difficultés, on vous prie de bien les repasser et de lire le contrat de confidentialité. Notez bien que toute infraction et irrespet aura comme conséquence un licenciment et des possibles poursuites légales.</p>
+  <br/>
+  <h1 class="subtitle is-size-4 has-text-info ml-6">Overview</h1>
+  <p class="ml-6 has-text-white">Vous trouverez ici un résumé partiel avec les points les plus importants de ces notions. La lecture de ce résumé <strong>ne remplace pas celle du document officiel</strong><br/>
+  on vous encourage de toutes nos forces à lire ce dernier. Voici les points les plus importants:</p>
+  <br/>
+  <lu class="has-text-white has-text-centered">
+    <li>Toute personne embauchée doit signer le <a>contrat de confidentialité</a> et le suivre avec rigueur, toute infraction sera punie avec le licenciement</li>
+    <li>Tout employé doit remplir ses fonctions complètement sans faute, tout jour d'absence non justifié est raison de licenciement</li>
+    <li>Aucun type de harcelement ni de discrimination est permis et ces actes seront sévèrement punis, avec le licenciement dans la majorité des cas</li>   
+  </lu>
+  <h1 class="subtitle is-size-4 has-text-info ml-6">Notions</h1>
+  <p class="ml-6 has-text-white">Vous trouverez ci-dessous les notions legales, on vous prie un nouveau de les lire attentivement. En cas de doute vous pourriez faire vos questions à notre équipe de HR au numero suivant:</p>
+  <br/>
+  <p class="has-text-centered has-text-info is-size-3">01 23 45 67 98</p>
+  <br/>
+  <button class="button has-background-white has-text-link mb-0 ml-0" id="accordion">Notions Legales</button>
+  <div class="box mt-0 has-background-white" id="panel" style="height: 60vh;">
+    <div style="height: 49vh; overflow: auto;">
+      <h1 class="title is-size-4 has-text-centered has-text-success">Règlement Légal pour les Travailleurs de Los Pollos Hermanos</h1>
+    <h1 class="has-text-centered title is-size-5 has-text-success">1. Respect du Code du Travail</h1>
+    <p class="has-text-centered has-text-success">Tous les employés de Los Pollos Hermanos doivent se conformer aux lois du travail en vigueur, notamment<br/>
+    celles concernant la durée légale du travail, les temps de repos, les congés payés, ainsi que les conditions de<br/>
+    santé et de sécurité au travail.</p>
+    <br/>
+    <h1 class="has-text-centered title is-size-5 has-text-success">2. Contrat de Travail et Rémunération</h1>
+    <p class="has-text-centered has-text-success">Chaque employé doit disposer d'un contrat de travail en conformité avec la législation en vigueur. La<br/>
+    rémunération doit respecter le salaire minimum légal et inclure les avantages sociaux prévus par la loi.</p>
+    <br/>
+    <h1 class="has-text-centered title is-size-5 has-text-success">3. Hygiène et Sécurité Alimentaire</h1>
+    <p class="has-text-centered has-text-success">En tant qu'entreprise de restauration, Los Pollos Hermanos doit respecter les normes d'hygiène alimentaire<br/>
+    établies par les autorités sanitaires. Tout employé manipulant des aliments doit suivre les protocoles de<br/>
+    sécurité alimentaire et détenir, si nécessaire, une certification en la matière.</p>
+    <br/>
+    <h1 class="has-text-centered title is-size-5 has-text-success">4. Protection des Données Personnelles</h1>
+    <p class="has-text-centered has-text-success">Les employés doivent respecter la confidentialité des données des clients et de l'entreprise. Toute information<br/>
+    personnelle doit être traitée en conformité avec les lois sur la protection des données.</p>
+    <br/>
+    <h1 class="has-text-centered title is-size-5 has-text-success">5. Lutte contre la Discrimination et le Harcèlement</h1>
+    <p class="has-text-centered has-text-success">Aucune discrimination ou harcèlement fondé sur l'origine, le genre, la religion, l'orientation sexuelle ou tout<br/>
+    autre critère interdit par la loi ne sera toléré au sein de Los Pollos Hermanos.</p>
+    <br/>
+    <h1 class="has-text-centered title is-size-5 has-text-success">6. Respect des Normes de Sécurité</h1>
+    <p class="has-text-centered has-text-success">Tous les employés doivent suivre les protocoles de sécurité en place pour prévenir les accidents du travail et<br/>
+    garantir la protection des clients et du personnel.</p>
+    <br/>
+    <h1 class="has-text-centered title is-size-5 has-text-success">7. Obligation de Confidentialité</h1>
+    <p class="has-text-centered has-text-success">Toute information interne concernant Los Pollos Hermanos, y compris les recettes, les procédés de fabrication<br/>
+    et les données commerciales, est strictement confidentielle et ne peut être divulguée à des tiers.</p>
+    <br/>
+    <h1 class="has-text-centered title is-size-5 has-text-success">8. Conformité Fiscale et Comptable</h1>
+    <p class="has-text-centered has-text-success">Los Pollos Hermanos s'engage à respecter l'ensemble des obligations fiscales et comptables en vigueur,<br/>
+    notamment en matière de déclaration des revenus, de TVA et de cotisations sociales.</p>
+    <br/>
+    <h1 class="has-text-centered title is-size-5 has-text-success">9. Engagement envers la Responsabilité Sociétale</h1>
+    <p class="has-text-centered has-text-success">L'entreprise favorise les pratiques respectueuses de l'environnement et encourage ses employés à adopter<br/>
+    des comportements écoresponsables.</p>
+    <br/>
+    <h1 class="has-text-centered title is-size-5 has-text-success">10. Sanctions en cas de Non-Respect</h1>
+    <p class="has-text-centered has-text-success">Tout manquement aux obligations légales et réglementaires pourra entraîner des sanctions disciplinaires,<br/>
+    pouvant aller jusqu'au licenciement, conformément au droit du travail en vigueur.</p>
+    </div>
+  </div>
+  <br/>
+  <p class="ml-6 mt-4 has-text-white has-text-centered is-size-5">Ce règlement vise à garantir un environnement de travail respectueux des lois et des valeurs éthiques de Los Pollos Hermanos.</p>
+</div>
+<div class="modal" id="connection_modal">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+   <div class="box has-background-white" id="connection_form">
+     <h1 class="title is-size-3 has-text-link has-text-centered">Connection</h1>
+     <div class="field">
+       <label class="label has-text-info">Nom d'utilisateur</label>
+       <div class="control">
+         <input class="input" id="username_input" type="text" placeholder="Votre nom d'utilisateur" style="border: 1px solid #43ebff;">
+       </div>
+     </div>
+     <div class="field">
+       <label class="label has-text-info">Mot de passe </label>
+       <div class="control">
+         <input class="input" id="password_input" type="text" placeholder="Votre mot hyper-secret" style="border: 1px solid #43ebff;">
+       </div>
+     </div>
+     <div class="buttons">
+       <button class="button is-info" id="login_button">Continuer</button>
+     </div>
+     <div>
+       <p class="has-text-success">Vous ne possedez pas une compte? alors: </p>
+       <div class="buttons">
+       <a href="enregistrement_type_account.html"><button class="button is-info">Créez une compte</button></a>
+     </div>
+     </div>
+   </div>     
+  </div>
+  <button class="modal-close is-large" aria-label="close" id="modal_close_button1"></button>
+</div>
+  <footer class="has-background-grey-darker" style="margin-top: 2rem; border-top: 2px solid;">
+    <p style="padding:3rem"> Une filiale de Madrigal Electromotive</p>
+  </footer>
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script src="scripts/contratacion.js">
+    
+  </script>
+</body>
+</html>

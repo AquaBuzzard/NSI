@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr" class="has-background-white">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/style_PP.css">
+
+  <title>Los Pollos Hermanos</title>
+  <script data-class='loading' data-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsFWNlSO5ylGra_3noSGNIhFZGkXqbw54&libraries=places"></script>
+  <style>
+    :root {
+      --bulma-primary-h: 7deg;
+  --bulma-primary-l: 49%;
+  --bulma-link-h: 45deg;
+  --bulma-link-l: 49%;
+  --bulma-info-h: 191deg;
+  --bulma-info-l: 49%;
+  --bulma-success-s: 100%;
+  --bulma-success-l: 0%;
+  --bulma-warning-h: 37deg;
+  --bulma-warning-l: 49%;
+  --bulma-danger-h: 360deg;
+  --bulma-danger-l: 38%;
+  --bulma-scheme-h: 57;
+  --bulma-scheme-s: 100%;
+  --bulma-light-l: 100%;
+  --bulma-light-invert-l: 100%;
+  --bulma-border: #ffdb3b;
+  --bulma-dark-l: 7%;
+}
+  </style>
+</head>
+<body class="has-background-dark">
+  <h1 id="title_pp" class="has-text-primary is-size-2 has-background-white"> Los Pollos Hermanos</h1>
+  <nav class="navbar has-background-dark" role="navigation" aria-label="main navigation">
+  
+  <div id="navbar" class="navbar-menu box pt-3 pb-3 is-active m-1">
+    <div class="navbar-start">
+      <a class="navbar-item pr-4 pl-4" href="Page_Principale.html">
+        Nous
+      </a>
+
+      <a class="navbar-item pr-4 pl-4 " href="menu.html">
+        Menu
+      </a>
+      
+      
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Exercices
+        </a>
+
+        <div class="navbar-dropdown">
+          <a href="" class="navbar-item">
+            Exercice 1
+          </a>
+          <a href="Tanguy-Exercice2-HTML.html" class="navbar-item">
+            Exercice 2
+          </a>
+          <a href="Tanguy-Exercice3-HTML.html" class="navbar-item">
+            Exercice 3
+          </a>
+          <a href="Nazar-Exercice4-HTML.html" class="navbar-item">
+            Exercice 4
+          </a>
+          <a href="Nazar-Exercice5-HTML.html" class="navbar-item">
+            Exercice 5
+          </a>
+          <a href="Angel-Exercice6-HTML.html" class="navbar-item">
+            Exercice 6
+          </a>
+        </div>
+      </div>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Activités
+        </a>
+
+        <div class="navbar-dropdown">
+          <a href="ac1.html" class="navbar-item">
+            Activité 1
+          </a>
+          <a class="navbar-item">
+            Activité 2
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <button class="button is-info" id="connection_button">Connectez-vous!</button>
+          <button class="button is-outlined is-link is-static" id="user_static_button">
+            <span class="icon-text">
+              <span class="icon">
+                <i class="fas fa-user"></i>
+              </span>
+              <span class="has-text-link" id="user_button_username">username</span>
+            </span>
+          </button>
+          <button class="button is-outlined is-static has-text-link" id="points_static_button">Points: 0</button>
+          <a class="button is-primary" href="contratacion.html">
+            <strong>Rejoins l'&Eacute;quipe!</strong>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<br/>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsFWNlSO5ylGra_3noSGNIhFZGkXqbw54&libraries=places&callback=initMap"></script>
+<h1 class="title is-size-3 has-text-centered has-text-link">Delivery</h1>
+<p class="has-text-centered has-text-white is-size-4">Inserez votre adresse</p>
+<div class="columns">
+    <div class="column is-half p-6">
+        <div class="embed-map-fixed">
+            <div id="map" class="embed-map-container" style="border: #ffc527 2px solid;">
+              <style>
+                #map {
+                    height: 400px;
+                    width: 100%;
+                }
+            </style>
+              <script>
+                let map;
+                let marker;
+                let geocoder;
+                function initMap() {
+                    map = new google.maps.Map(document.getElementById("map"), {
+                        center: { lat: 37.7749, lng: -122.4194 },
+                        zoom: 12,
+                    });
+                    geocoder = new google.maps.Geocoder();
+                    marker = new google.maps.Marker({ map: map });
+                }
+                function searchLocation() {
+                    let address = document.getElementById("searchBox").value;
+                    geocoder.geocode({ address: address }, (results, status) => {
+                        if (status === "OK") {
+                            map.setCenter(results[0].geometry.location);
+                            marker.setPosition(results[0].geometry.location);
+                        } else {
+                            alert("Geocode was not successful: " + status);
+                        }
+                    });
+                }
+                window.onload = initMap;
+            </script>
+            </div><style>.embed-map-fixed{position:relative;text-align:right;width:600px;height:400px;}.embed-map-container{overflow:hidden;background:none!important;width:600px;height:400px;}.embed-map-frame{width:600px!important;height:400px!important;}</style>
+          </div>
+    </div>
+    <div class="column is-half p-6">
+        <br/>
+        <br/>
+        <h1 class="title is-size-4 has-text-centered has-text-link mt-6">
+            Votre addresse
+        </h1>
+        <div class="field has-addons">
+            <div class="control is-expanded">
+                <input id="searchBox" class="input" type="text" placeholder="rue 12 Quartier 34">
+            </div>
+                <div>
+                <button onclick="searchLocation()" class="button is-primary">Entrer</button>
+              </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="field is-grouped is-grouped-centered">
+      <div class="control"><a href="commande.html" class="button is-link">Continuer</a></div>
+    </div>
+</div>
+<div class="modal" id="connection_modal">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+   <div class="box has-background-white" id="connection_form">
+     <h1 class="title is-size-3 has-text-link has-text-centered">Connection</h1>
+     <div class="field">
+       <label class="label has-text-info">Nom d'utilisateur</label>
+       <div class="control">
+         <input class="input" id="username_input" type="text" placeholder="Votre nom d'utilisateur" style="border: 1px solid #43ebff;">
+       </div>
+     </div>
+     <div class="field">
+       <label class="label has-text-info">Mot de passe </label>
+       <div class="control">
+         <input class="input" id="password_input" type="text" placeholder="Votre mot hyper-secret" style="border: 1px solid #43ebff;">
+       </div>
+     </div>
+     <div class="buttons">
+       <button class="button is-info" id="login_button">Continuer</button>
+     </div>
+     <div>
+       <p class="has-text-success">Vous ne possedez pas une compte? alors: </p>
+       <div class="buttons">
+       <a href="enregistrement_type_account.html"><button class="button is-info">Créez une compte</button></a>
+     </div>
+     </div>
+   </div>     
+  </div>
+  <button class="modal-close is-large" aria-label="close" id="modal_close_button1"></button>
+</div>
+<footer class="has-background-grey-darker hero" style="margin-top: 2rem; border-top: 2px solid">
+    <p style="padding:3rem"> Une filiale de Madrigal Electromotive</p>
+  </footer>
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+<script src="scripts/PP.js"></script>
+</body>
+</html>

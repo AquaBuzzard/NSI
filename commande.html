@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="fr" class="has-background-white">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/style_PP.css">
+
+  <title>Los Pollos Hermanos</title>
+  <style>
+    :root {
+      --bulma-primary-h: 7deg;
+  --bulma-primary-l: 49%;
+  --bulma-link-h: 45deg;
+  --bulma-link-l: 49%;
+  --bulma-info-h: 191deg;
+  --bulma-info-l: 49%;
+  --bulma-success-s: 100%;
+  --bulma-success-l: 0%;
+  --bulma-warning-h: 37deg;
+  --bulma-warning-l: 49%;
+  --bulma-danger-h: 360deg;
+  --bulma-danger-l: 38%;
+  --bulma-scheme-h: 57;
+  --bulma-scheme-s: 100%;
+  --bulma-light-l: 100%;
+  --bulma-light-invert-l: 100%;
+  --bulma-border: #ffdb3b;
+  --bulma-dark-l: 7%;
+}
+  </style>
+</head>
+<body class="has-background-dark">
+  <h1 id="title_pp" class="has-text-primary is-size-2 has-background-white"> Los Pollos Hermanos</h1>
+  <nav class="navbar has-background-dark" role="navigation" aria-label="main navigation">
+  
+  <div id="navbar" class="navbar-menu box pt-3 pb-3 is-active m-1">
+    <div class="navbar-start">
+      <a class="navbar-item pr-4 pl-4" href="Page_Principale.html">
+        Nous
+      </a>
+
+      <a class="navbar-item pr-4 pl-4 " href="menu.html">
+        Menu
+      </a>
+      
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Exercices
+        </a>
+
+        <div class="navbar-dropdown">
+          <a href="" class="navbar-item">
+            Exercice 1
+          </a>
+          <a href="Tanguy-Exercice2-HTML.html" class="navbar-item">
+            Exercice 2
+          </a>
+          <a href="Tanguy-Exercice3-HTML.html" class="navbar-item">
+            Exercice 3
+          </a>
+          <a href="Nazar-Exercice4-HTML.html" class="navbar-item">
+            Exercice 4
+          </a>
+          <a href="Nazar-Exercice5-HTML.html" class="navbar-item">
+            Exercice 5
+          </a>
+          <a href="Angel-Exercice6-HTML.html" class="navbar-item">
+            Exercice 6
+          </a>
+        </div>
+      </div>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Activités
+        </a>
+
+        <div class="navbar-dropdown">
+          <a href="ac1.html" class="navbar-item">
+            Activité 1
+          </a>
+          <a class="navbar-item">
+            Activité 2
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <button class="button is-info" id="connection_button">Connectez-vous!</button>
+          <button class="button is-outlined is-link is-static" id="user_static_button">
+            <span class="icon-text">
+              <span class="icon">
+                <i class="fas fa-user"></i>
+              </span>
+              <span class="has-text-link" id="user_button_username">username</span>
+            </span>
+          </button>
+          <button class="button is-outlined is-static has-text-link" id="points_static_button">Points: 0</button>
+          <a class="button is-primary" href="contratacion.html">
+            <strong>Rejoins l'&Eacute;quipe!</strong>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<br/>
+<div class="p-3 tabcontent" id="formules_tab">
+    <h1 class="title has-text-centered has-text-primary is-size-4">Choissisez votre formule</h1>
+    <div class="columns">
+        <div class="column">
+            <div class="card" style="background-color: black; border: #ffde24 2px solid;">
+                <div class="card-image p-2">
+                    <figure class="image is-96x96px">
+                        <img src="images/Poulet-Roti.jpg">
+                    </figure>
+                </div>
+                <div class="media-content">
+                    <p class="title is-size-5 has-text-centered">Formule "Gustavo"</p>
+                    <div class="field is-grouped is-grouped-centered"  data-product="formule_gustavo">
+                        <div class="control">
+                            <button class="button is-link minus_b">
+                                <span class="icon">
+                                    <i class="fas fa-minus"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="control">
+                            <p class="title is-size-4 quantity_counter">0</p>  
+                        </div>
+                        <div class="control">
+                            <button class="button is-link plus_b">
+                                <span class="icon">
+                                    <i class="fas fa-plus"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <br/>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card" style="background-color: black; border: #ffde24 2px solid;">
+                <div class="card-image p-2">
+                    <figure class="image is-96x96px">
+                        <img src="images/pollo.jpg">
+                    </figure>
+                </div>
+                <div class="media-content">
+                    <p class="title is-size-5 has-text-centered">Formule "Salamanca"</p>
+                    <div class="field is-grouped is-grouped-centered" data-product="formule_salamanca">
+                        <div class="control">
+                            <button class="button is-link minus_b">
+                                <span class="icon">
+                                    <i class="fas fa-minus"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="control">
+                            <p class="title is-size-4 quantity_counter">0</p>  
+                        </div>
+                        <div class="control">
+                            <button class="button is-link plus_b">
+                                <span class="icon">
+                                    <i class="fas fa-plus"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <br/>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card" style="background-color: black; border: #ffde24 2px solid;">
+                <div class="card-image p-2">
+                    <figure class="image is-96x96px">
+                        <img src="images/pollo2.jpg">
+                    </figure>
+                </div>
+                <div class="media-content">
+                    <p class="title is-size-5 has-text-centered">Formule "Mike"</p>
+                    <div class="field is-grouped is-grouped-centered" data-product="formule_mike">
+                        <div class="control">
+                            <button class="button is-link minus_b">
+                                <span class="icon">
+                                    <i class="fas fa-minus"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="control">
+                            <p class="title is-size-4 quantity_counter">0</p>  
+                        </div>
+                        <div class="control">
+                            <button class="button is-link plus_b">
+                                <span class="icon">
+                                    <i class="fas fa-plus"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <br/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="p-3 tabcontent" id="plats_tab">
+    <h1 class="title has-text-centered has-text-primary is-size-4">Choissisez un plat</h1>
+    <div class="columns">
+        <div class="column">
+            <div class="card" style="background-color: black; border: #ffde24 2px solid;">
+                <div class="card-image p-2">
+                    <figure class="image is-96x96px">
+                        <img src="images/poulet-roti-2.jpg">
+                    </figure>
+                </div>
+                <div class="media-content">
+                    <p class="title is-size-5 has-text-centered">Poulet Rôti Signature</p>
+                    <div class="field is-grouped is-grouped-centered" data-product="poulet_roti">
+                        <div class="control">
+                            <button class="button is-link minus_b">
+                                <span class="icon">
+                                    <i class="fas fa-minus"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="control">
+                            <p class="title is-size-4 quantity_counter">0</p>  
+                        </div>
+                        <div class="control">
+                            <button class="button is-link plus_b">
+                                <span class="icon">
+                                    <i class="fas fa-plus"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <br/>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card" style="background-color: black; border: #ffde24 2px solid;">
+                <div class="card-image p-2">
+                    <figure class="image is-96x96px">
+                        <img src="images/pollo3.jpg">
+                    </figure>
+                </div>
+                <div class="media-content">
+                    <p class="title is-size-5 has-text-centered">Poulet Épicé aux Cactus</p>
+                    <div class="field is-grouped is-grouped-centered" data-product="poulet-epice">
+                        <div class="control">
+                            <button class="button is-link minus_b">
+                                <span class="icon">
+                                    <i class="fas fa-minus"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="control">
+                            <p class="title is-size-4 quantity_counter">0</p>  
+                        </div>
+                        <div class="control">
+                            <button class="button is-link plus_b">
+                                <span class="icon">
+                                    <i class="fas fa-plus"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <br/>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card" style="background-color: black; border: #ffde24 2px solid;">
+                <div class="card-image p-2">
+                    <figure class="image is-96x96px">
+                        <img src="images/pollo4.jpg">
+                    </figure>
+                </div>
+                <div class="media-content">
+                    <p class="title is-size-5 has-text-centered">Poulet Grillé à l'Avocat</p>
+                    <div class="field is-grouped is-grouped-centered" data-product="poulet_grille">
+                        <div class="control">
+                            <button class="button is-link minus_b">
+                                <span class="icon">
+                                    <i class="fas fa-minus"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="control">
+                            <p class="title is-size-4 quantity_counter">0</p>  
+                        </div>
+                        <div class="control">
+                            <button class="button is-link plus_b">
+                                <span class="icon">
+                                    <i class="fas fa-plus"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <br/>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<div class="p-3 tabcontent" id="boisson_tab">
+    <h1 class="title has-text-centered has-text-primary is-size-4">Choissisez vos boissons</h1>
+    <div class="columns">
+        <div class="column">
+            <div class="card" style="background-color: black; border: #ffde24 2px solid;">
+                <div class="card-image p-2">
+                    <figure class="image is-96x96px">
+                        <img src="images/coca-cola.jpg">
+                    </figure>
+                </div>
+                <div class="media-content">
+                    <p class="title is-size-5 has-text-centered has-text-primary">Coca-Cola</p>
+                    <div class="field is-grouped is-grouped-centered" data-product="c_cola">
+                        <div class="control">
+                            <button class="button is-link minus_b">
+                                <span class="icon">
+                                    <i class="fas fa-minus"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="control">
+                            <p class="title is-size-4 quantity_counter">0</p>  
+                        </div>
+                        <div class="control">
+                            <button class="button is-link plus_b">
+                                <span class="icon">
+                                    <i class="fas fa-plus"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <br/>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card" style="background-color: black; border: #ffde24 2px solid;">
+                <div class="card-image p-2">
+                    <figure class="image is-96x96px">
+                        <img src="images/sprite.jpg">
+                    </figure>
+                </div>
+                <div class="media-content">
+                    <p class="title is-size-5 has-text-centered">Sprite</p>
+                    <div class="field is-grouped is-grouped-centered" data-product="sprite">
+                        <div class="control">
+                            <button class="button is-link minus_b">
+                                <span class="icon">
+                                    <i class="fas fa-minus"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="control">
+                            <p class="title is-size-4 quantity_counter">0</p>  
+                        </div>
+                        <div class="control">
+                            <button class="button is-link plus_b">
+                                <span class="icon">
+                                    <i class="fas fa-plus"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <br/>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card" style="background-color: black; border: #ffde24 2px solid;">
+                <div class="card-image p-2">
+                    <figure class="image is-96x96px">
+                        <img src="images/fanta.jpg">
+                    </figure>
+                </div>
+                <div class="media-content">
+                    <p class="title is-size-5 has-text-centered">Fanta</p>
+                    <div class="field is-grouped is-grouped-centered" data-product="fanta">
+                        <div class="control">
+                            <button class="button is-link minus_b">
+                                <span class="icon">
+                                    <i class="fas fa-minus"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="control">
+                            <p class="title is-size-4 quantity_counter">0</p>  
+                        </div>
+                        <div class="control">
+                            <button class="button is-link plus_b">
+                                <span class="icon">
+                                    <i class="fas fa-plus"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <br/>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card" style="background-color: black; border: #ffde24 2px solid;">
+                <div class="card-image p-2">
+                    <figure class="image is-96x96px">
+                        <img src="images/eau.jpg">
+                    </figure>
+                </div>
+                <div class="media-content">
+                    <p class="title is-size-5 has-text-centered">Eau</p>
+                    <div class="field is-grouped is-grouped-centered" data-product="water">
+                        <div class="control">
+                            <button class="button is-link minus_b">
+                                <span class="icon">
+                                    <i class="fas fa-minus"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="control">
+                            <p class="title is-size-4 quantity_counter">0</p>  
+                        </div>
+                        <div class="control">
+                            <button class="button is-link plus_b">
+                                <span class="icon">
+                                    <i class="fas fa-plus"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <br/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="columns">
+        <div class="column"></div>
+        <div class="column">
+            <div class="card" style="background-color: black; border: #ffde24 2px solid;">
+                <div class="card-image p-2">
+                    <figure class="image is-96x96px">
+                        <img src="images/the-glace.jpg">
+                    </figure>
+                </div>
+                <div class="media-content">
+                    <p class="title is-size-5 has-text-centered">Thé-glacé</p>
+                    <div class="field is-grouped is-grouped-centered" data-product="t_glace">
+                        <div class="control">
+                            <button class="button is-link minus_b">
+                                <span class="icon">
+                                    <i class="fas fa-minus"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="control">
+                            <p class="title is-size-4 quantity_counter">0</p>  
+                        </div>
+                        <div class="control">
+                            <button class="button is-link plus_b">
+                                <span class="icon">
+                                    <i class="fas fa-plus"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <br/>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card" style="background-color: black; border: #ffde24 2px solid;">
+                <div class="card-image p-2">
+                    <figure class="image is-96x96px">
+                        <img src="images/horchata.jpg">
+                    </figure>
+                </div>
+                <div class="media-content">
+                    <p class="title is-size-5 has-text-centered">Horchata</p>
+                    <div class="field is-grouped is-grouped-centered" data-product="horchata">
+                        <div class="control">
+                            <button class="button is-link minus_b">
+                                <span class="icon">
+                                    <i class="fas fa-minus"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="control">
+                            <p class="title is-size-4 quantity_counter">0</p>  
+                        </div>
+                        <div class="control">
+                            <button class="button is-link plus_b">
+                                <span class="icon">
+                                    <i class="fas fa-plus"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <br/>
+                </div>
+            </div>
+        </div>
+        <div class="column"></div>
+</div>
+</div>
+<div class="field is-grouped is-grouped-centered">
+    <div class="control">
+        <button class="button is-link is-size-4" id="next_b" >Continuer</button>
+    </div>
+</div>
+    
+</div>
+<div class="modal" id="connection_modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+     <div class="box has-background-white" id="connection_form">
+       <h1 class="title is-size-3 has-text-link has-text-centered">Connection</h1>
+       <div class="field">
+         <label class="label has-text-info">Nom d'utilisateur</label>
+         <div class="control">
+           <input class="input" id="username_input" type="text" placeholder="Votre nom d'utilisateur" style="border: 1px solid #43ebff;">
+         </div>
+       </div>
+       <div class="field">
+         <label class="label has-text-info">Mot de passe </label>
+         <div class="control">
+           <input class="input" id="password_input" type="text" placeholder="Votre mot hyper-secret" style="border: 1px solid #43ebff;">
+         </div>
+       </div>
+       <div class="buttons">
+         <button class="button is-info" id="login_button">Continuer</button>
+       </div>
+       <div>
+         <p class="has-text-success">Vous ne possedez pas une compte? alors: </p>
+         <div class="buttons">
+         <a href="enregistrement_type_account.html"><button class="button is-info">Créez une compte</button></a>
+       </div>
+       </div>
+     </div>     
+    </div>
+    <button class="modal-close is-large" aria-label="close" id="modal_close_button1"></button>
+  </div>
+<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+<script src="scripts/commande.js"></script>
+<footer class="has-background-grey-darker hero" style="margin-top: 2rem; border-top: 2px solid">
+    <p style="padding:3rem"> Une filiale de Madrigal Electromotive</p>
+  </footer>
+</body>
+</html>

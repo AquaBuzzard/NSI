@@ -1,0 +1,83 @@
+@font-face{
+  font-family: "mayan";
+  src: url("../Mayan.ttf") format("truetype");
+}
+@font-face{
+  font-family: "elegant";
+  src: url("../KingsguardCalligraphy_PERSONAL_USE_ONLY.otf");
+}
+
+#title_pp{
+  text-align: center;
+  color: rbg(200, 0, 0);
+  border-bottom: 2px #ffd42a solid;
+  box-shadow: 5px 0px 5px black; 
+}
+
+.mayan{font-family: "mayan";}
+.elegant{font-family: "elegant";}
+
+
+body{
+  color: #F0C000;
+  padding: 0px;
+}
+
+/*commande choix:*/
+#pickup_b{
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+#pickup_b:hover{
+  cursor: pointer;
+  top: -10px;
+}
+#delivery_b{
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+#delivery_b:hover{
+  cursor: pointer;
+  top: -10px;
+}
+
+/*commande_pickup_local-ch:*/
+#accordion{
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  margin: 5px;
+  transition: 0.4s;
+  border: none;
+  outline: none;
+}
+
+#panel{
+  display: none;
+  overflow: hidden;
+  transition: max-height 2s ease-out;
+}
+
+#continue_b{
+  display: none;
+}
+
+.card{
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+
+.card:hover{
+  cursor: pointer;
+  top: -10px;
+}
+
+#user_static_button{
+  display: none;
+}
+#points_static_button{
+  display: none;
+}

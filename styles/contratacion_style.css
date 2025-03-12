@@ -1,0 +1,60 @@
+#title_pp{
+  text-align: center;
+  color: rbg(200, 0, 0);
+  border-bottom: 2px #ffd42a solid; 
+}
+body{
+  color: #F0C000;
+  padding: 0px;
+}
+
+
+#presentation_tab{
+  display: none;
+}
+
+#accordion{
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  margin: 5px;
+  transition: 0.4s;
+  border: none;
+  outline: none;
+}
+
+#panel{
+  display: none;
+  overflow: hidden;
+  transition: max-height 2s ease-out;
+}
+
+#competences_tab{
+  display: none;
+}
+
+#benef_tab{
+  display: none;
+}
+
+#legal_tab{
+  display: none;
+}
+
+#user_static_button{
+  display: none;
+}
+#points_static_button{
+  display: none;
+}
+
+@font-face{
+  font-family: "mayan";
+  src: url("../Mayan.ttf") format("truetype");
+}
+
+.mayan{font-family: "mayan";}
+
+a:hover{
+  font-family: "mayan";
+}

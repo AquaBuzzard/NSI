@@ -1,0 +1,45 @@
+#title_pp{
+    text-align: center;
+    color: rbg(200, 0, 0);
+    border-bottom: 2px #ffd42a solid; 
+}
+body{
+    color: #F0C000;
+    padding: 0px;
+}
+
+#accordion{
+    cursor: pointer;
+    padding: 18px;
+    height: 30vh;
+    width: 100%;
+    margin: 5px;
+    transition: 0.4s;
+    border: none;
+    outline: none;
+}
+
+
+#panel{
+    display: none;
+    overflow: hidden;
+    transition: max-height 2s ease-out;
+}
+
+.litl_b{
+    height: 10vh;
+}
+
+#user_static_button{
+    display: none;
+  }
+  #points_static_button{
+    display: none;
+  }
+
+  @font-face{
+    font-family: "mayan";
+    src: url("../Mayan.ttf") format("truetype");
+  }
+  
+  .mayan{font-family: "mayan";}

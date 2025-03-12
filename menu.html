@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="fr" class="has-background-white">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles/menu_style.css">
+  
+  <title>Los Pollos Hermanos</title>
+  <style>
+    :root {
+      --bulma-primary-h: 7deg;
+  --bulma-primary-l: 49%;
+  --bulma-link-h: 45deg;
+  --bulma-link-l: 49%;
+  --bulma-info-h: 191deg;
+  --bulma-info-l: 49%;
+  --bulma-success-s: 100%;
+  --bulma-success-l: 0%;
+  --bulma-warning-h: 37deg;
+  --bulma-warning-l: 49%;
+  --bulma-danger-h: 360deg;
+  --bulma-danger-l: 38%;
+  --bulma-scheme-h: 57;
+  --bulma-scheme-s: 100%;
+  --bulma-light-l: 100%;
+  --bulma-light-invert-l: 100%;
+  --bulma-border: #ffdb3b;
+  --bulma-dark-l: 7%;
+}
+  </style>
+</head>
+<body class="has-background-dark">
+  <h1 id="title_pp" class="has-text-primary is-size-2 has-background-white"> Los Pollos Hermanos</h1>
+  <nav class="navbar has-background-dark" role="navigation" aria-label="main navigation">
+
+    <div  id="navbar"  class="navbar-menu box pt-3 pb-3 m-1 is-active">
+      <div class="navbar-start">
+        <a class="navbar-item  pr-4 pl-4" href="Page_Principale.html">
+         Nous
+        </a>
+
+        <a class="navbar-item pr-4 pl-4 is-selected">
+          Menu
+        </a>
+     
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Exercices
+          </a>
+
+          <div class="navbar-dropdown">
+            <a class="navbar-item">
+              Exercice 1
+            </a>
+            <a href="Tanguy-Exercice2-HTML.html" class="navbar-item">
+              Exercice 2
+            </a>
+            <a href="Tanguy-Exercice3-HTML.html" class="navbar-item">
+              Exercice 3
+            </a>
+            <a href="Nazar-Exercice4-HTML.html" class="navbar-item">
+              Exercice 4
+            </a>
+            <a href="Nazar-Exercice5-HTML.html" class="navbar-item">
+              Exercice 5
+            </a>
+            <a href="Angel-Exercice6-HTML.html" class="navbar-item">
+              Exercice 6
+            </a>
+          </div>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Activités
+          </a>
+
+          <div class="navbar-dropdown">
+            <a href="ac1.html" class="navbar-item">
+              Activité 1
+            </a>
+            <a class="navbar-item">
+              Activité 2
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <button class="button is-info" id="connection_button">Connectez-vous!</button>
+            <button class="button is-outlined is-link is-static" id="user_static_button">
+              <span class="icon-text">
+                <span class="icon">
+                  <i class="fas fa-user"></i>
+                </span>
+                <span class="has-text-link" id="user_button_username">username</span>
+              </span>
+            </button>
+            <button class="button is-outlined is-static has-text-link" id="points_static_button">Points: 0</button>
+            <a class="button is-primary" href="contratacion.html">
+              <strong>Rejoins l'&Eacute;quipe!</strong>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+  </nav>
+  <div class="container mt-5">
+    <div class="columns">
+      <div class="column">
+        <h1 class="title has-text-link has-text-centered is-size-3">Menu</h1>
+        <button class="button has-background-white has-text-success mb-0 ml-0" id="accordion" style="background-image: url(images/menu_poulet_bg.jpg); background-size: cover;"><strong class="has-text-success is-size-2">Poulet</strong></button>
+        <div class="box has-background-white" id="panel">
+          <div class="box has-background-warning " id="menu_item" style="border: 2px solid black;">
+            <article class="media">
+              <div class="media-left">
+                <figure class="image is-64x64">
+                  <img src="images/Poulet-Roti.jpg" alt="Image" style="border: 2px solid black;"/>
+                </figure>
+              </div>
+              <div class="media-content">
+                <div class="content">
+                  <p class="has-text-success">
+                    <strong class="has-text-success">Poulet Rôti Signature</strong>
+                    <small><s>9.99€</s>8.99€</small>
+                    <br />
+                    Poulet rôti mariné dans une sauce secrète, servi avec des frites maison et une sauce au choix.
+                  </p>
+                </div>
+        
+              </div>
+            </article>
+          </div>
+          <div class="box has-background-black" id="menu_item">
+            <article class="media">
+              <div class="media-left">
+                <figure class="image is-64x64">
+                  <img src="images/pollo.jpg" alt="Image" style="border: 1px solid white;"/>
+                </figure>
+              </div>
+              <div class="media-content">
+                <div class="content">
+                  <p class="has-text-white">
+                    <strong class="has-text-white">Poulet Épicé aux Cactus</strong>
+                    <small><s>11.99€</s>9.99€</small>
+                    <br />
+                    Filets de poulet épicés accompagnés d'une salade de cactus frais et de riz basmati.
+                  </p>
+                </div>
+        
+              </div>
+            </article>
+          </div>
+          <div class="box has-background-black" id="menu_item">
+            <article class="media">
+              <div class="media-left">
+                <figure class="image is-64x64">
+                  <img src="images/pollo2.jpg" alt="Image" style="border: 1px solid white;"/>
+                </figure>
+              </div>
+              <div class="media-content">
+                <div class="content">
+                  <p class="has-text-white">
+                    <strong class="has-text-white">Poulet Grillé à l'Avocat</strong>
+                    <small><s>14.99€</s>11.99€</small>
+                    <br />
+                    Poitrine de poulet grillée servie avec une sauce crémeuse à l'avocat et des légumes croquants.
+                  </p>
+                </div>
+        
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+    <div class="columns">
+      <div class="column">
+        <button class="button has-background-white has-text-success mb-0 ml-0" id="accordion" style="background-image: url(images/menu_formule_bg.jpg); background-size: cover;"><strong class="has-text-success is-size-2">Formules</strong></button>
+        <div class="box has-background-white" id="panel">
+          <div class="box has-background-black">
+            <article class="media">
+              <div class="media-left">
+                <figure class="image is-64x64">
+                  <img src="images/Poulet-Roti.jpg" alt="Image" style="border: 1px solid white;"/>
+                </figure>
+              </div>
+              <div class="media-content">
+                <div class="content">
+                  <p class="has-text-white">
+                    <strong class="has-text-white">Formule "Gustavo"</strong>
+                    <small>12.99€</small>
+                    <br />
+                    Un poulet rôti, une portion de frites maison, une boisson au choix
+                  </p>
+                </div>
+        
+              </div>
+            </article>
+          </div>
+          <div class="box has-background-black">
+            <article class="media">
+              <div class="media-left">
+                <figure class="image is-64x64">
+                  <img src="images/pollo.jpg" alt="Image" style="border: 1px solid white;"/>
+                </figure>
+              </div>
+              <div class="media-content">
+                <div class="content">
+                  <p class="has-text-white">
+                    <strong class="has-text-white">Formule "Salamanca"</strong>
+                    <small>14.99€</small>
+                    <br />
+                    Poulet épicé aux cactus, riz basmati et une boisson au choix
+                  </p>
+                </div>
+        
+              </div>
+            </article>
+          </div>
+          <div class="box has-background-warning" style="border: 2px solid rgb(0, 0, 0);">
+            <article class="media">
+              <div class="media-left">
+                <figure class="image is-64x64">
+                  <img src="images/pollo2.jpg" alt="Image" style="border: 1px solid rgb(0, 0, 0);"/>
+                </figure>
+              </div>
+              <div class="media-content">
+                <div class="content">
+                  <p class="has-text-success">
+                    <strong class="has-text-success">Formule "Mike"</strong>
+                    <small>15.99€</small>
+                    <br />
+                    Poulet grillé à l'avocat, légumes croquants et une boisson au choix.
+                  </p>
+                </div>
+        
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column">
+        <button class="button has-background-white has-text-success mb-0 ml-0" id="accordion" style="background-image: url(images/menu_boissons_bg.jpg); background-size: cover;"><strong class="has-text-white is-size-2">Boissons</strong></button>
+        <div class="box has-background-white" id="panel">
+          <p class="has-text-success has-text-centered">"A diet coke and five minutes of your time..."</p>
+        <div class="box has-background-warning" style="border: 2px solid rgb(0, 0, 0);">
+          <article class="media">
+            <div class="media-content">
+              <div class="content">
+                <p class="has-text-success">
+                  <strong class="has-text-success">Sodas (Coca-Cola, Fanta, Sprite)</strong>
+                  <small>2.99€</small>
+                  <br/>
+                  <strong class="has-text-success">Eau plate ou pétillante</strong>
+                  <small>2.49€</small>
+                  <br/>
+                  <strong class="has-text-success">Thé glacé maison (saveur pêche ou citron) </strong>
+                  <small>3.49€</small>
+                  <br/>
+                  <strong class="has-text-success">Horchata (boisson traditionnelle à base de riz et de cannelle)</strong>
+                  <small>3.99€</small>
+                </p>
+              </div>
+      
+            </div>
+          </article>
+        </div>
+        </div>
+     </div>
+    </div>
+  </div>
+  <div class="field is-grouped is-grouped-centered mt-4">
+    <div class="control">
+      <div class="buttons">
+        <a href="commande_choix.html" class="button is-primary">Commander</a>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="connection_modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+     <div class="box has-background-white" id="connection_form">
+       <h1 class="title is-size-3 has-text-link has-text-centered">Connection</h1>
+       <div class="field">
+         <label class="label has-text-info">Nom d'utilisateur</label>
+         <div class="control">
+           <input class="input" id="username_input" type="text" placeholder="Votre nom d'utilisateur" style="border: 1px solid #43ebff;">
+         </div>
+       </div>
+       <div class="field">
+         <label class="label has-text-info">Mot de passe </label>
+         <div class="control">
+           <input class="input" id="password_input" type="text" placeholder="Votre mot hyper-secret" style="border: 1px solid #43ebff;">
+         </div>
+       </div>
+       <div class="buttons">
+         <button class="button is-info" id="login_button">Continuer</button>
+       </div>
+       <div>
+         <p class="has-text-success">Vous ne possedez pas une compte? alors: </p>
+         <div class="buttons">
+         <a href="enregistrement_type_account.html"><button class="button is-info">Créez une compte</button></a>
+       </div>
+       </div>
+     </div>     
+    </div>
+    <button class="modal-close is-large" aria-label="close" id="modal_close_button1"></button>
+  </div>
+  <footer class="has-background-grey-darker" style="margin-top: 2rem; border-top: 2px solid">
+    <p style="padding:3rem"> Une filiale de Madrigal Electromotive</p>
+  </footer>
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script src="scripts/menu.js"></script>
+</body>
+</html>
