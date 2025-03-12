@@ -97,5 +97,3 @@ login_button.onclick = function(){
 c_modal.classList.toggle("is-active")
 
 }
-
-

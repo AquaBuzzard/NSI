@@ -1,7 +1,7 @@
 #title_pp{
   text-align: center;
   color: rbg(200, 0, 0);
-  border-bottom: 2px red solid; 
+  border-bottom: 2px #ffd42a solid; 
 }
 body{
   color: #F0C000;
@@ -46,4 +46,15 @@ body{
 }
 #points_static_button{
   display: none;
+}
+
+@font-face{
+  font-family: "mayan";
+  src: url("../Mayan.ttf") format("truetype");
+}
+
+.mayan{font-family: "mayan";}
+
+a:hover{
+  font-family: "mayan";
 }

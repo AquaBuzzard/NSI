@@ -1,9 +1,23 @@
+@font-face{
+  font-family: "mayan";
+  src: url("../Mayan.ttf") format("truetype");
+}
+@font-face{
+  font-family: "elegant";
+  src: url("../KingsguardCalligraphy_PERSONAL_USE_ONLY.otf");
+}
+
 #title_pp{
   text-align: center;
   color: rbg(200, 0, 0);
   border-bottom: 2px #ffd42a solid;
   box-shadow: 5px 0px 5px black; 
 }
+
+.mayan{font-family: "mayan";}
+.elegant{font-family: "elegant";}
+
+
 body{
   color: #F0C000;
   padding: 0px;
