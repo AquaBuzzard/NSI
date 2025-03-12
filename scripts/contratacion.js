@@ -83,6 +83,20 @@ async function getUserOnLogin(username, password) {
   }
 }
 
+let c_button = document.getElementById("connection_button");
+let c_modal = document.getElementById("connection_modal");
+let close_b = document.getElementById("modal_close_button1");
+let login_button = document.getElementById("login_button");
+
+
+c_button.onclick = function() {
+  c_modal.classList.toggle("is-active")
+}
+
+close_b.onclick = function() {
+  c_modal.classList.toggle("is-active")
+}
+
 login_button.onclick = function(){
   let demanding_password = document.getElementById("password_input").value;
   let demanding_username = document.getElementById("username_input").value;

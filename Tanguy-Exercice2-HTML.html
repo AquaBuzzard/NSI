@@ -4,14 +4,52 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+>
+  <link rel="stylesheet" href="styles/style_PP.css">
   <title>Exercice 2</title>
+  <style>
+    :root {
+      --bulma-primary-h: 7deg;
+  --bulma-primary-l: 49%;
+  --bulma-link-h: 45deg;
+  --bulma-link-l: 49%;
+  --bulma-info-h: 191deg;
+  --bulma-info-l: 49%;
+  --bulma-success-s: 100%;
+  --bulma-success-l: 0%;
+  --bulma-warning-h: 37deg;
+  --bulma-warning-l: 49%;
+  --bulma-danger-h: 360deg;
+  --bulma-danger-l: 38%;
+  --bulma-scheme-h: 57;
+  --bulma-scheme-s: 100%;
+  --bulma-light-l: 100%;
+  --bulma-light-invert-l: 100%;
+  --bulma-border: #ffdb3b;
+  --bulma-dark-l: 7%;
+}
+  </style>
 </head>
-<body>
+<body >
 
-  <button onclick="Pythagore()">Exercice 2</button><br/>
+  <h1 class="is-size-1 has-text-centered has-text-primary mayan">Exercice 2</h1>
 
-  <li><a href="Page_Principale.html" class="navbar_item">Page Principale</a></li>
+  <p class="has-text-centered has-text-white is-size-4 mb-4">Comment savoir la longuer d'un troisieme cote d'un triangle rectangle? il faut juste faire click sur le button</p>
+  
+  <div class="field is-grouped is-grouped-centered ">
+    <div class="field is-grouped is-grouped-centered p-6 m-6" style="border: 2px solid red; box-shadow: 0px 0px 5px white, 0px 0px 5px white inset; width: 20vw;">
+      <div class="control"><button class="button is-primary is-size-4" onclick="Pythagore()">Exercice 2</button><br/></div>
+    </div>
+    
+  </div>
+
+  <div class="field is-grouped is-grouped-centered ">
+    <a class="button is-link is-size-4" href="Page_Principale.html" class="navbar_item">Page Principale</a>
+  </div>
+  
 
   <div id="result"></div>
 

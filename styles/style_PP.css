@@ -81,3 +81,7 @@ body{
 #points_static_button{
   display: none;
 }
+
+a:hover{
+  font-family: "mayan";
+}

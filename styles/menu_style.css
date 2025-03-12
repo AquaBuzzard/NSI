@@ -43,3 +43,7 @@ body{
   }
   
   .mayan{font-family: "mayan";}
+
+  a:hover{
+    font-family: "mayan";
+  }
