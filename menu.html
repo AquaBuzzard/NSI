@@ -44,10 +44,33 @@
         <a class="navbar-item  pr-4 pl-4" href="Page_Principale.html">
          Nous
         </a>
-
-        <a class="navbar-item pr-4 pl-4 is-selected">
+        <style>
+        .sale-circle {
+          display: inline-block;
+          margin-left: 1px;
+          margin-top: 0px;
+          background-color: red;
+          color: white;
+          padding: 2px 6px;
+          font-size: 0.7rem;
+          font-weight: bold;
+          border-radius: 50%;
+          animation: bounce 0.8s infinite ease-in-out;
+      }
+      
+      @keyframes bounce {
+          0%, 100% {
+              transform: translateY(0);
+          }
+          50% {
+              transform: translateY(-4px);
+          }
+      }
+      </style>
+        <a class="navbar-item pr-4 pl-4 is-selected sale-badge-nav">
           Menu
-        </a>
+          <span class="sale-circle">Sale</span>
+      </a>
      
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link">
@@ -118,7 +141,36 @@
     <div class="columns">
       <div class="column">
         <h1 class="title has-text-link has-text-centered is-size-3">Menu</h1>
-        <button class="button has-background-white has-text-success mb-0 ml-0" id="accordion" style="background-image: url(images/menu_poulet_bg.jpg); background-size: cover;"><strong class="has-text-success is-size-2">Poulet</strong></button>
+        <style>
+        .sale-label {
+          position: absolute;
+          top: -10px;
+          right: -10px;
+          background-color: red;
+          color: white;
+          padding: 5px 10px;
+          border-radius: 50%;
+          font-weight: bold;
+          animation: pop 1s infinite ease-in-out;
+      }
+      
+      @keyframes pop {
+          0%, 100% {
+              transform: scale(1);
+          }
+          50% {
+              transform: scale(1.2);
+          }
+      }
+      
+      .button {
+          position: relative;
+      }
+      </style>
+        <button class="button has-background-white has-text-success mb-0 ml-0 sale-badge" id="accordion" style="background-image: url(images/menu_poulet_bg.jpg); background-size: cover;">
+          <strong class="has-text-success is-size-2">Poulet</strong>
+          <div class="sale-label">Sale!</div>
+      </button>
         <div class="box has-background-white" id="panel">
           <div class="box has-background-warning " id="menu_item" style="border: 2px solid black;">
             <article class="media">
@@ -131,7 +183,7 @@
                 <div class="content">
                   <p class="has-text-success">
                     <strong class="has-text-success">Poulet Rôti Signature</strong>
-                    <small><s>9.99€</s>8.99€</small>
+                    <small><s>9.99€</s> 8.99€</small>
                     <br />
                     Poulet rôti mariné dans une sauce secrète, servi avec des frites maison et une sauce au choix.
                   </p>
@@ -151,7 +203,7 @@
                 <div class="content">
                   <p class="has-text-white">
                     <strong class="has-text-white">Poulet Épicé aux Cactus</strong>
-                    <small><s>11.99€</s>9.99€</small>
+                    <small><s>11.99€</s> 9.99€</small>
                     <br />
                     Filets de poulet épicés accompagnés d'une salade de cactus frais et de riz basmati.
                   </p>
@@ -171,7 +223,7 @@
                 <div class="content">
                   <p class="has-text-white">
                     <strong class="has-text-white">Poulet Grillé à l'Avocat</strong>
-                    <small><s>14.99€</s>11.99€</small>
+                    <small><s>14.99€</s> 11.99€</small>
                     <br />
                     Poitrine de poulet grillée servie avec une sauce crémeuse à l'avocat et des légumes croquants.
                   </p>
