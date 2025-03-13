@@ -46,8 +46,32 @@
         Nous
       </a>
 
-      <a class="navbar-item pr-4 pl-4 has-text-" href="menu.html">
-        Menu
+      <style>
+        .sale-circle {
+          display: inline-block;
+          margin-left: 1px;
+          margin-top: 0px;
+          background-color: red;
+          color: white;
+          padding: 2px 6px;
+          font-size: 0.7rem;
+          font-weight: bold;
+          border-radius: 50%;
+          animation: bounce 0.8s infinite ease-in-out;
+      }
+
+      @keyframes bounce {
+          0%, 100% {
+              transform: translateY(0);
+          }
+          50% {
+              transform: translateY(-4px);
+          }
+      }
+      </style>
+        <a class="navbar-item pr-4 pl-4 sale-badge-nav" href="menu.html">
+          Menu
+          <span class="sale-circle">Sale</span>
       </a>
 
       <a class="navbar-item pr-4 pl-4 " href="investment_space.html">
@@ -139,22 +163,17 @@ Vous ne go&ucirc;terez plus jamais le poulet de la m&ecirc;me mani&egrave;re !<b
       <h3 class="is-size-4 title has-text-link">Gustavo Fring, n&ocirc;tre fondateur.</h3>
       <img src="images/Owner.PNG" class="mt-5" style="border: 2px solid black; border-radius: 5px;">
       </div>
-      <div class="box has-background-white">
-        <h1 class="title is-size-5 has-text-link has-text-centered">Donnations pour les createurs du site</h1>
-        <p class="has-text-success">Si vous avez aimez le site, soutenez les createurs du site pour leurs aider avec son travaille, 
-          toute donnation sera utilisée pour l'amelioration du site, et l'alimentation des createurs...
-        </p>
-        <h1 class="subtitle has-text-link is-size-5 has-text-centered">Addresse Bitcoin</h1>
-        <div class="field is-grouped is-grouped-centered">
-          <figure class="image is-128x128">
-            <img src="images/bitcoinkey.jpg" style="border: solid 1px #ffdb43;">
-          </figure>
-          
-        </div>
-        <p class="has-text-centered has-text-success">1325fCujusk7hTgUy9yyCywJ2z9S6FsQqQ</p>
-       
-      </div>
+      
     </div>
+  </div>
+</div>
+<p class="has-text-centered has-text-white mt-6">Space publicitaire</p>
+<div class="field is is-grouped is-grouped-centered ">
+  <div class="control">
+    <img src="images/saulad.jpg" style="border: 2px solid #ffdb3b; border-radius: 15px; height: 30vh;">
+  </div>
+  <div class="control">
+    <img src="images/carwashad.jpg" style="border: 2px solid #ffdb3b; border-radius: 15px; height: 30vh;">
   </div>
 </div>
   <div class="modal" id="connection_modal">
