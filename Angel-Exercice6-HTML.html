@@ -5,33 +5,67 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Titre de la page</title>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+  >
+    <link rel="stylesheet" href="styles/style_PP.css">
+  <style>
+    :root {
+      --bulma-primary-h: 7deg;
+  --bulma-primary-l: 49%;
+  --bulma-link-h: 45deg;
+  --bulma-link-l: 49%;
+  --bulma-info-h: 191deg;
+  --bulma-info-l: 49%;
+  --bulma-success-s: 100%;
+  --bulma-success-l: 0%;
+  --bulma-warning-h: 37deg;
+  --bulma-warning-l: 49%;
+  --bulma-danger-h: 360deg;
+  --bulma-danger-l: 38%;
+  --bulma-scheme-h: 57;
+  --bulma-scheme-s: 100%;
+  --bulma-light-l: 100%;
+  --bulma-light-invert-l: 100%;
+  --bulma-border: #ffdb3b;
+  --bulma-dark-l: 7%;
+}
+  </style>
+  <title>Exercice 4</title>
 </head>
 <body>
-  <h1>Un Quizz en HTML et JavaScript</h1>
+  <h1 class="mayan  has-text-centered has-text-primary is-size-1">Un Quizz en HTML et JavaScript</h1>
   <p id="result_p"></p><br/>
-  <h2>Premiere Question</h2>
+  <h2 class="mayan  has-text-centered has-text-link is-size-3">Premiere Question</h2>
   <div>
-    <p> Le nombre 540 (en base 10) s'ecrit 21C en base 16: </p>
-    <button id="true_button">Vraie</button>
-    <button id="false_button">faux</button>
+    <p class="has-text-white has-text-centered"> Le nombre 540 (en base 10) s'ecrit 21C en base 16: </p>
+    <div class="field is-grouped is-grouped-centered">
+      <button class="button is-info" id="true_button">Vraie</button>
+      <button class="button is-primary" id="false_button">faux</button>
+    </div>
+    
     <br/>
   </div>
   <div>
-    <h2>Deuxieme Question</h2>
-    <p>Dans la representation des reels en base binaire le <strong>bit de poids fort</strong> est souvent utilise pour:</p>
-    <select id="list1" onchange="selection()">
-      <option>choissisez</option>
-      <option value="1">L'exposant biaise</option>
-      <option value="2">Le signe du nombre</option>
-      <option value="3">le complement A2</option>
-    </select>
+    <h2 class="mayan  has-text-centered has-text-link is-size-3">Deuxième Question</h2>
+    <p class="has-text-white has-text-centered">Dans la representation des reels en base binaire le <strong>bit de poids fort</strong> est souvent utilise pour:</p>
+    <div class="field is-grouped is-grouped-centered">
+      <div class="select">
+        <select id="list1" onchange="selection()">
+          <option>choissisez</option>
+          <option value="1">L'exposant biaise</option>
+          <option value="2">Le signe du nombre</option>
+          <option value="3">le complement A2</option>
+        </select>
+      </div>
+      
+    </div>
+    
   </div>
   <div>
-    <h2>
-      Troisième question
-    </h2>
-    <p>Quel est le module de python qui permet de dessiner avec une <strong>tortue</strong></p>
+    <h2 class="mayan  has-text-centered has-text-link is-size-3">Troisième Question</h2>
+    <p class="has-text-white has-text-centered">Quel est le module de python qui permet de dessiner avec une <strong>tortue</strong></p>
     <input type="text" id="field1" value="">
     <button id="3_button"> Valider la response 3</button>
     <br/>
@@ -39,15 +73,20 @@
   <br/>
 
   <div>
-    <h1> Breaking Bad</h1>
-    <h2>Première question</h2>
-    <p> Quel est le pseudonyme de Walter White?</p>
-    <select id="list2">
-      <option>choissisez</option>
-      <option value="pll">Pollo</option>
-      <option value="nac">Nacho</option>
-      <option value="berg">Heisenberg</option>
-    </select>
+    <h1 class="has-text-centered has-text-info mayan is-size-2"> Breaking Bad</h1>
+    <h2 class="mayan  has-text-centered has-text-link is-size-3">Premiere Question</h2>
+    <p class="has-text-white has-text-centered"> Quel est le pseudonyme de Walter White?</p>
+    <div class="field is-grouped is-grouped-centered">
+    <div class="select">
+      <select id="list2">
+        <option>choissisez</option>
+        <option value="pll">Pollo</option>
+        <option value="nac">Nacho</option>
+        <option value="berg">Heisenberg</option>
+      </select>
+    </div>
+    </div>
+   
     <h2>Deuxième question</h2>
     <p>comment s'appelle la chanson qui sonne a la fin de la serie<br/> piste: la chanson apartient a la bande badfinger.</p>
     <input type="text" id="field2" value="">
