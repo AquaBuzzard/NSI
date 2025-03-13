@@ -5,18 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercice 4</title>
-
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+>
+  <link rel="stylesheet" href="styles/style_PP.css">
+  <style>
+    :root {
+      --bulma-primary-h: 7deg;
+  --bulma-primary-l: 49%;
+  --bulma-link-h: 45deg;
+  --bulma-link-l: 49%;
+  --bulma-info-h: 191deg;
+  --bulma-info-l: 49%;
+  --bulma-success-s: 100%;
+  --bulma-success-l: 0%;
+  --bulma-warning-h: 37deg;
+  --bulma-warning-l: 49%;
+  --bulma-danger-h: 360deg;
+  --bulma-danger-l: 38%;
+  --bulma-scheme-h: 57;
+  --bulma-scheme-s: 100%;
+  --bulma-light-l: 100%;
+  --bulma-light-invert-l: 100%;
+  --bulma-border: #ffdb3b;
+  --bulma-dark-l: 7%;
+}
+  </style>
+  <title>Exercice 4</title>
 </head>
 <body>
-    <p>Entrez un entier entre 0 et 100</p>
+    <h1 class="is-size-1 has-text-centered has-text-primary mayan">Exercice 3</h1>
 
-    <div id="jeu">
-        <input type="number" id="guessInput" placeholder="Entrez votre nombre" />
-        <button onclick="deviner()">Deviner</button>
+  <p class="has-text-centered has-text-white is-size-4 mb-4">Entrez un entier entre 0 et 100</p>
+
+  <div class="field is-grouped is-grouped-centered">
+    <div class="field has-addons">
+        <div class="control">
+            <input class="input" type="number" id="guessInput" placeholder="Entrez votre nombre" />
+        </div>
+        <div class="control">
+            <button class="button is-primary " onclick="deviner()">Deviner</button>
+        </div>
     </div>
+  </div>
 
-    <div id="rendu"></div>
-    <div id="tentatives"></div>
+    
+
+    <div class="has-text-centered" id="rendu"></div>
+    <div class="has-text-centered" id="tentatives"></div>
 
     <script>
         let X = Math.floor(Math.random() * 101);
@@ -53,6 +90,8 @@
         }
     </script>
 
-    <li><a href="Page_Principale.html" class="navbar_item">Page Principale</a></li>
+<div class="field is-grouped is-grouped-centered ">
+    <a class="button is-link is-size-4" href="Page_Principale.html" class="navbar_item">Page Principale</a>
+  </div>
 </body>
 </html>
